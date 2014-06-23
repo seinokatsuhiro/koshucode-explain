@@ -62,7 +62,7 @@
 * 引数分類 `-term` のなかに、[階層的な項目名] がある。
 
 [0 個]:                     abort/README.md#source-abort-no-patternk
-[2 個]:                     abort/README.md#source-abort-dup-patternk)
+[2 個]:                     abort/README.md#source-abort-dup-patternk
 [項目名ではない引数]:       abort/README.md#source-abort-non-namek
 [階層的な項目名]:           abort/README.md#source-abort-nested-termk
 
