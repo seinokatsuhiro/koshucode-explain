@@ -15,7 +15,7 @@ my $path  = $ARGV[0];
 my ( $group, $rop, $readme ) = split '/', $path;
 
 while (<>) {
-    if ( /^[*] `$rop (.*)` — ([^\r\n]*)/ ) {
+    if ( /^[*] `$rop ?(.*)` — ([^\r\n]*)/ ) {
         $found = 1;
         my $attr = $1;
         my $desc = $2;
