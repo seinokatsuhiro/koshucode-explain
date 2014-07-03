@@ -33,7 +33,7 @@
 [トゥイードルダムとトゥイードルディー]: http://ja.wikipedia.org/wiki/トゥイードルダムとトゥイードルディー
 [典型的な使用例]:               basic/README.md#dee-basic-sizek
 [交わりの単位元]:               basic/README.md#dee-basic-meetk
-[関係定数]:                     basic/README.md#dee-equiv-constk
+[関係定数]:                     equiv/README.md#dee-equiv-constk
 
 属性
 ------------------------------------------------------------------
