@@ -6,6 +6,7 @@
 
 | グループ | 演算子 | 属性 | 説明 |
 |----------|--------|------|------|
+| builtin | [id](builtin/id/README.md) |  | 恒等関係写像 |
 | meta | [koshu-rop](meta/koshu-rop/README.md) | /T | 関係写像演算子の一覧 |
 | source | [dee](source/dee/README.md) |  | 無項万有関係 |
 | source | [source](source/source/README.md) | P /T ... | 関係の読み出し |
