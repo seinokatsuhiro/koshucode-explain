@@ -69,49 +69,50 @@ Command `koshu koshu-rop-basic-name.k` produces:
 |-- ROP  /name 'range
 |-- ROP  /name 'split
 |-- ROP  /name 'subst
-|-- ROP  /name 'contents
+|-- ROP  /name 'unary
 
+|-- ROP  /name 'contents
 |-- ROP  /name 'number
 |-- ROP  /name 'rank
 |-- ROP  /name 'size
 |-- ROP  /name 'both
-|-- ROP  /name 'maybe
 
+|-- ROP  /name 'maybe
 |-- ROP  /name 'cut
 |-- ROP  /name 'cut-term
 |-- ROP  /name 'pick
 |-- ROP  /name 'pick-term
-|-- ROP  /name 'rename
 *** 50
 
+|-- ROP  /name 'rename
 |-- ROP  /name 'move
 |-- ROP  /name 'prefix
 |-- ROP  /name 'prefix-change
 |-- ROP  /name 'unprefix
-|-- ROP  /name 'compose
 
+|-- ROP  /name 'compose
 |-- ROP  /name 'join
 |-- ROP  /name 'meet
 |-- ROP  /name 'none
 |-- ROP  /name 'some
-|-- ROP  /name 'sub
 
+|-- ROP  /name 'sub
 |-- ROP  /name 'const
 |-- ROP  /name 'dee
 |-- ROP  /name 'dum
 |-- ROP  /name 'empty
-|-- ROP  /name 'source
 
+|-- ROP  /name 'source
 |-- ROP  /name 'source-term
 |-- ROP  /name 'append
 |-- ROP  /name 'id
 
-*** 68 judges
+*** 69 judges
 
 **
 **  SUMMARY
-**      68 judges on ROP
-**      68 judges in total
+**      69 judges on ROP
+**      69 judges in total
 **
 ```
 
@@ -145,7 +146,7 @@ Command `koshu koshu-rop-basic-table.k` produces:
 |-- ROP  /n 1  /group 'builtin  /rop {| /n : /name : /usage | 1 : 'append : "append R ..." | 2 : 'id : 'id |}
 |-- ROP  /n 2  /group 'check  /rop {| /n : /name : /usage | 1 : 'check-term : "check-term [-just /N ... | -has /N ... | -but /N ...]" | 2 : 'dump : 'dump | 3 : 'duplicate : "duplicate /N ..." | 4 : 'exclude : "exclude /N ... -from R" |}
 |-- ROP  /n 3  /group 'control  /rop {| /n : /name : /usage | 1 : 'equal : 'equal | 2 : 'fix : "fix R" | 3 : 'fix-join : "fix-join R" | 4 : 'if : "if R ..." | 5 : 'repeat : "repeat N R" | 6 : 'unless : "unless R R" | 7 : 'when : "when R R" |}
-|-- ROP  /n 4  /group 'cox  /rop {| /n : /name : /usage | 1 : 'add : "add /N E ..." | 2 : 'keep : "keep E" | 3 : 'omit : "omit E" | 4 : 'omit-all : 'omit-all | 5 : 'range : "range /N -from E -to E" | 6 : 'split : "split /N E ..." | 7 : 'subst : "subst /N E ..." |}
+|-- ROP  /n 4  /group 'cox  /rop {| /n : /name : /usage | 1 : 'add : "add /N E ..." | 2 : 'keep : "keep E" | 3 : 'omit : "omit E" | 4 : 'omit-all : 'omit-all | 5 : 'range : "range /N -from E -to E" | 6 : 'split : "split /N E ..." | 7 : 'subst : "subst /N E ..." | 8 : 'unary : "unary /N E ..." |}
 |-- ROP  /n 5  /group 'gadget  /rop {| /n : /name : /usage | 1 : 'contents : "contents /N" | 2 : 'number : "number /N -order /N ..." | 3 : 'rank : "rank /N -order /N ..." | 4 : 'size : "size /N" |}
 
 |-- ROP  /n 6  /group 'lattice  /rop {| /n : /name : /usage | 1 : 'compose : "compose R" | 2 : 'join : "join R" | 3 : 'meet : "meet R" | 4 : 'none : "none R" | 5 : 'some : "some R" | 6 : 'sub : "sub R" |}
@@ -194,6 +195,7 @@ Command `koshu koshu-rop-basic-table.k` produces:
 **                       5    'range             "range /N -from E -to E"
 **                       6    'split             "split /N E ..."
 **                       7    'subst             "subst /N E ..."
+**                       8    'unary             "unary /N E ..."
 **                       
 **    5    'gadget       /n   /name              /usage
 **                       ---- ------------------ ---------------------------------------------------------
