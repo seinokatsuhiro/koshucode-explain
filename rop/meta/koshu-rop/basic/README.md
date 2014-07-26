@@ -152,7 +152,7 @@ Command `koshu koshu-rop-basic-table.k` produces:
 |-- ROP  /n 6  /group 'lattice  /rop {| /n : /name : /usage | 1 : 'compose : "compose R" | 2 : 'join : "join R" | 3 : 'meet : "meet R" | 4 : 'none : "none R" | 5 : 'some : "some R" | 6 : 'sub : "sub R" |}
 |-- ROP  /n 7  /group 'meta  /rop {| /n : /name : /usage | 1 : 'koshu-cop : "koshu-cop /N" | 2 : 'koshu-cop-infix : "koshu-cop-infix /N [-height /N][-dir /N]" | 3 : 'koshu-rop : "koshu-rop /N /N" | 4 : 'koshu-version : "koshu-version /N" |}
 |-- ROP  /n 8  /group 'nest  /rop {| /n : /name : /usage | 1 : 'chunk : "chunk /T ... [-order /P ...]" | 2 : 'copy : "copy N R" | 3 : 'down : "down /N" | 4 : 'for : "for /N R [-with /N ...]" | 5 : 'group : "group /N R" | 6 : 'group-by : "group-by /N R" | 7 : 'join-up : "join-up /P ..." | 8 : 'nest : "nest [~] /P ... -to /N" | 9 : 'slice : "slice /N [R] [-with /N ...]" | 10 : 'slice-up : "slice-up R [-with /N ...]" | 11 : 'unnest : "unnest /P" | 12 : 'up : "up /N" |}
-|-- ROP  /n 9  /group 'nil  /rop {| /n : /name : /usage | 1 : 'both : "both R" | 2 : 'maybe : "maybe R" |}
+|-- ROP  /n 9  /group 'nil  /rop {| /n : /name : /usage | 1 : 'both : "both R [-fill E]" | 2 : 'maybe : "maybe R [-fill E]" |}
 |-- ROP  /n 10  /group 'peripheral  /rop {| /n : /name : /usage | 1 : 'assn : "assn /P ... -to N" | 2 : 'member : "member /N /N" | 3 : 'rdf : "rdf P /S /O" | 4 : 'typename : "typename /N /P ..." | 5 : 'unassn : "unassn /P -only /P ..." |}
 
 |-- ROP  /n 11  /group 'source  /rop {| /n : /name : /usage | 1 : 'const : "const R" | 2 : 'dee : 'dee | 3 : 'dum : 'dum | 4 : 'empty : "empty /N ..." | 5 : 'source : "source P /N ..." | 6 : 'source-term : "source-term P R" |}
@@ -237,8 +237,8 @@ Command `koshu koshu-rop-basic-table.k` produces:
 **                       
 **    9    'nil          /n   /name              /usage
 **                       ---- ------------------ ---------------------------------------------------------
-**                       1    'both              "both R"
-**                       2    'maybe             "maybe R"
+**                       1    'both              "both R [-fill E]"
+**                       2    'maybe             "maybe R [-fill E]"
 **                       
 **    10   'peripheral   /n   /name              /usage
 **                       ---- ------------------ ---------------------------------------------------------
