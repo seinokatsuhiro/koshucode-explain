@@ -144,7 +144,7 @@ Command `koshu source-basic-ragged-judges.k` produces:
 
 |-- Q  /x 1  /y 40
 |-- Q  /x 1  /y 50
-|-- Q  /x 2  /y ()
+|-- Q  /x 2
 
 *** 3 judges
 
