@@ -62,57 +62,60 @@ Command `koshu koshu-rop-basic-name.k` produces:
 |-- ROP  /name 'unless
 |-- ROP  /name 'when
 |-- ROP  /name 'add
+|-- ROP  /name 'contain
 |-- ROP  /name 'keep
-|-- ROP  /name 'omit
 
+|-- ROP  /name 'omit
 |-- ROP  /name 'omit-all
 |-- ROP  /name 'range
+|-- ROP  /name 'replace-all
 |-- ROP  /name 'split
+
 |-- ROP  /name 'subst
 |-- ROP  /name 'unary
-
 |-- ROP  /name 'contents
 |-- ROP  /name 'number
 |-- ROP  /name 'rank
+
 |-- ROP  /name 'size
 |-- ROP  /name 'both
-
 |-- ROP  /name 'maybe
 |-- ROP  /name 'cut
 |-- ROP  /name 'cut-term
-|-- ROP  /name 'pick
-|-- ROP  /name 'pick-term
 *** 50
 
+|-- ROP  /name 'pick
+|-- ROP  /name 'pick-term
 |-- ROP  /name 'rename
 |-- ROP  /name 'move
 |-- ROP  /name 'prefix
+
 |-- ROP  /name 'prefix-change
 |-- ROP  /name 'unprefix
-
 |-- ROP  /name 'compose
 |-- ROP  /name 'join
 |-- ROP  /name 'meet
+
 |-- ROP  /name 'none
 |-- ROP  /name 'some
-
 |-- ROP  /name 'sub
 |-- ROP  /name 'const
 |-- ROP  /name 'dee
+
 |-- ROP  /name 'dum
 |-- ROP  /name 'empty
-
 |-- ROP  /name 'source
 |-- ROP  /name 'source-term
 |-- ROP  /name 'append
+
 |-- ROP  /name 'id
 
-*** 69 judges
+*** 71 judges
 
 **
 **  SUMMARY
-**      69 judges on ROP
-**      69 judges in total
+**      71 judges on ROP
+**      71 judges in total
 **
 ```
 
@@ -146,13 +149,13 @@ Command `koshu koshu-rop-basic-table.k` produces:
 |-- ROP  /n 1  /group 'builtin  /rop {| /n : /name : /usage | 1 : 'append : "append R ..." | 2 : 'id : 'id |}
 |-- ROP  /n 2  /group 'check  /rop {| /n : /name : /usage | 1 : 'check-term : "check-term [-just /N ... | -has /N ... | -but /N ...]" | 2 : 'dump : 'dump | 3 : 'duplicate : "duplicate /N ..." | 4 : 'exclude : "exclude /N ... -from R" |}
 |-- ROP  /n 3  /group 'control  /rop {| /n : /name : /usage | 1 : 'equal : 'equal | 2 : 'fix : "fix R" | 3 : 'fix-join : "fix-join R" | 4 : 'if : "if R ..." | 5 : 'repeat : "repeat N R" | 6 : 'unless : "unless R R" | 7 : 'when : "when R R" |}
-|-- ROP  /n 4  /group 'cox  /rop {| /n : /name : /usage | 1 : 'add : "add /N E ..." | 2 : 'keep : "keep E" | 3 : 'omit : "omit E" | 4 : 'omit-all : 'omit-all | 5 : 'range : "range /N -from E -to E" | 6 : 'split : "split /N E ..." | 7 : 'subst : "subst /N E ..." | 8 : 'unary : "unary /N E ..." |}
-|-- ROP  /n 5  /group 'gadget  /rop {| /n : /name : /usage | 1 : 'contents : "contents /N" | 2 : 'number : "number /N -order /N ..." | 3 : 'rank : "rank /N -order /N ..." | 4 : 'size : "size /N" |}
+|-- ROP  /n 4  /group 'cox  /rop {| /n : /name : /usage | 1 : 'add : "add /N E ..." | 2 : 'contain : "contain E" | 3 : 'keep : "keep E" | 4 : 'omit : "omit E" | 5 : 'omit-all : 'omit-all | 6 : 'range : "range /N -from E -to E" | 7 : 'replace-all : "replace-all -from E -to E" | 8 : 'split : "split /N E ..." | 9 : 'subst : "subst /N E ..." | 10 : 'unary : "unary /N E ..." |}
+|-- ROP  /n 5  /group 'empty  /rop {| /n : /name : /usage | 1 : 'both : "both R [-fill E]" | 2 : 'maybe : "maybe R [-fill E]" |}
 
-|-- ROP  /n 6  /group 'lattice  /rop {| /n : /name : /usage | 1 : 'compose : "compose R" | 2 : 'join : "join R" | 3 : 'meet : "meet R" | 4 : 'none : "none R" | 5 : 'some : "some R" | 6 : 'sub : "sub R" |}
-|-- ROP  /n 7  /group 'meta  /rop {| /n : /name : /usage | 1 : 'koshu-cop : "koshu-cop /N" | 2 : 'koshu-cop-infix : "koshu-cop-infix /N [-height /N][-dir /N]" | 3 : 'koshu-rop : "koshu-rop /N /N" | 4 : 'koshu-version : "koshu-version /N" |}
-|-- ROP  /n 8  /group 'nest  /rop {| /n : /name : /usage | 1 : 'chunk : "chunk /T ... [-order /P ...]" | 2 : 'copy : "copy N R" | 3 : 'down : "down /N" | 4 : 'for : "for /N R [-with /N ...]" | 5 : 'group : "group /N R" | 6 : 'group-by : "group-by /N R" | 7 : 'join-up : "join-up /P ..." | 8 : 'nest : "nest [~] /P ... -to /N" | 9 : 'slice : "slice /N [R] [-with /N ...]" | 10 : 'slice-up : "slice-up R [-with /N ...]" | 11 : 'unnest : "unnest /P" | 12 : 'up : "up /N" |}
-|-- ROP  /n 9  /group 'nil  /rop {| /n : /name : /usage | 1 : 'both : "both R [-fill E]" | 2 : 'maybe : "maybe R [-fill E]" |}
+|-- ROP  /n 6  /group 'gadget  /rop {| /n : /name : /usage | 1 : 'contents : "contents /N" | 2 : 'number : "number /N -order /N ..." | 3 : 'rank : "rank /N -order /N ..." | 4 : 'size : "size /N" |}
+|-- ROP  /n 7  /group 'lattice  /rop {| /n : /name : /usage | 1 : 'compose : "compose R" | 2 : 'join : "join R" | 3 : 'meet : "meet R" | 4 : 'none : "none R" | 5 : 'some : "some R" | 6 : 'sub : "sub R" |}
+|-- ROP  /n 8  /group 'meta  /rop {| /n : /name : /usage | 1 : 'koshu-cop : "koshu-cop /N" | 2 : 'koshu-cop-infix : "koshu-cop-infix /N [-height /N][-dir /N]" | 3 : 'koshu-rop : "koshu-rop /N /N" | 4 : 'koshu-version : "koshu-version /N" |}
+|-- ROP  /n 9  /group 'nest  /rop {| /n : /name : /usage | 1 : 'chunk : "chunk /T ... [-order /P ...]" | 2 : 'copy : "copy N R" | 3 : 'down : "down /N" | 4 : 'for : "for /N R [-with /N ...]" | 5 : 'group : "group /N R" | 6 : 'group-by : "group-by /N R" | 7 : 'join-up : "join-up /P ..." | 8 : 'nest : "nest [~] /P ... -to /N" | 9 : 'slice : "slice /N [R] [-with /N ...]" | 10 : 'slice-up : "slice-up R [-with /N ...]" | 11 : 'unnest : "unnest /P" | 12 : 'up : "up /N" |}
 |-- ROP  /n 10  /group 'peripheral  /rop {| /n : /name : /usage | 1 : 'assn : "assn /P ... -to N" | 2 : 'member : "member /N /N" | 3 : 'rdf : "rdf P /S /O" | 4 : 'typename : "typename /N /P ..." | 5 : 'unassn : "unassn /P -only /P ..." |}
 
 |-- ROP  /n 11  /group 'source  /rop {| /n : /name : /usage | 1 : 'const : "const R" | 2 : 'dee : 'dee | 3 : 'dum : 'dum | 4 : 'empty : "empty /N ..." | 5 : 'source : "source P /N ..." | 6 : 'source-term : "source-term P R" |}
@@ -189,22 +192,29 @@ Command `koshu koshu-rop-basic-table.k` produces:
 **    4    'cox          /n   /name              /usage
 **                       ---- ------------------ ---------------------------------------------------------
 **                       1    'add               "add /N E ..."
-**                       2    'keep              "keep E"
-**                       3    'omit              "omit E"
-**                       4    'omit-all          'omit-all
-**                       5    'range             "range /N -from E -to E"
-**                       6    'split             "split /N E ..."
-**                       7    'subst             "subst /N E ..."
-**                       8    'unary             "unary /N E ..."
+**                       2    'contain           "contain E"
+**                       3    'keep              "keep E"
+**                       4    'omit              "omit E"
+**                       5    'omit-all          'omit-all
+**                       6    'range             "range /N -from E -to E"
+**                       7    'replace-all       "replace-all -from E -to E"
+**                       8    'split             "split /N E ..."
+**                       9    'subst             "subst /N E ..."
+**                       10   'unary             "unary /N E ..."
 **                       
-**    5    'gadget       /n   /name              /usage
+**    5    'empty        /n   /name              /usage
+**                       ---- ------------------ ---------------------------------------------------------
+**                       1    'both              "both R [-fill E]"
+**                       2    'maybe             "maybe R [-fill E]"
+**                       
+**    6    'gadget       /n   /name              /usage
 **                       ---- ------------------ ---------------------------------------------------------
 **                       1    'contents          "contents /N"
 **                       2    'number            "number /N -order /N ..."
 **                       3    'rank              "rank /N -order /N ..."
 **                       4    'size              "size /N"
 **                       
-**    6    'lattice      /n   /name              /usage
+**    7    'lattice      /n   /name              /usage
 **                       ---- ------------------ ---------------------------------------------------------
 **                       1    'compose           "compose R"
 **                       2    'join              "join R"
@@ -213,14 +223,14 @@ Command `koshu koshu-rop-basic-table.k` produces:
 **                       5    'some              "some R"
 **                       6    'sub               "sub R"
 **                       
-**    7    'meta         /n   /name              /usage
+**    8    'meta         /n   /name              /usage
 **                       ---- ------------------ ---------------------------------------------------------
 **                       1    'koshu-cop         "koshu-cop /N"
 **                       2    'koshu-cop-infix   "koshu-cop-infix /N [-height /N][-dir /N]"
 **                       3    'koshu-rop         "koshu-rop /N /N"
 **                       4    'koshu-version     "koshu-version /N"
 **                       
-**    8    'nest         /n   /name              /usage
+**    9    'nest         /n   /name              /usage
 **                       ---- ------------------ ---------------------------------------------------------
 **                       1    'chunk             "chunk /T ... [-order /P ...]"
 **                       2    'copy              "copy N R"
@@ -234,11 +244,6 @@ Command `koshu koshu-rop-basic-table.k` produces:
 **                       10   'slice-up          "slice-up R [-with /N ...]"
 **                       11   'unnest            "unnest /P"
 **                       12   'up                "up /N"
-**                       
-**    9    'nil          /n   /name              /usage
-**                       ---- ------------------ ---------------------------------------------------------
-**                       1    'both              "both R [-fill E]"
-**                       2    'maybe             "maybe R [-fill E]"
 **                       
 **    10   'peripheral   /n   /name              /usage
 **                       ---- ------------------ ---------------------------------------------------------
