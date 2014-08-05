@@ -68,54 +68,56 @@ Command `koshu koshu-rop-basic-name.k` produces:
 |-- ROP  /name 'omit
 |-- ROP  /name 'omit-all
 |-- ROP  /name 'range
+|-- ROP  /name 'fill
+|-- ROP  /name 'replace
+
 |-- ROP  /name 'replace-all
 |-- ROP  /name 'split
-
 |-- ROP  /name 'subst
 |-- ROP  /name 'unary
 |-- ROP  /name 'contents
+
 |-- ROP  /name 'number
 |-- ROP  /name 'rank
-
 |-- ROP  /name 'size
 |-- ROP  /name 'both
 |-- ROP  /name 'maybe
-|-- ROP  /name 'cut
-|-- ROP  /name 'cut-term
 *** 50
 
+|-- ROP  /name 'cut
+|-- ROP  /name 'cut-term
 |-- ROP  /name 'pick
 |-- ROP  /name 'pick-term
 |-- ROP  /name 'rename
+
 |-- ROP  /name 'move
 |-- ROP  /name 'prefix
-
 |-- ROP  /name 'prefix-change
 |-- ROP  /name 'unprefix
 |-- ROP  /name 'compose
+
 |-- ROP  /name 'join
 |-- ROP  /name 'meet
-
 |-- ROP  /name 'none
 |-- ROP  /name 'some
 |-- ROP  /name 'sub
+
 |-- ROP  /name 'const
 |-- ROP  /name 'dee
-
 |-- ROP  /name 'dum
 |-- ROP  /name 'empty
 |-- ROP  /name 'source
+
 |-- ROP  /name 'source-term
 |-- ROP  /name 'append
-
 |-- ROP  /name 'id
 
-*** 71 judges
+*** 73 judges
 
 **
 **  SUMMARY
-**      71 judges on ROP
-**      71 judges in total
+**      73 judges on ROP
+**      73 judges in total
 **
 ```
 
@@ -149,7 +151,7 @@ Command `koshu koshu-rop-basic-table.k` produces:
 |-- ROP  /n 1  /group 'builtin  /rop {| /n : /name : /usage | 1 : 'append : "append R ..." | 2 : 'id : 'id |}
 |-- ROP  /n 2  /group 'check  /rop {| /n : /name : /usage | 1 : 'check-term : "check-term [-just /N ... | -has /N ... | -but /N ...]" | 2 : 'dump : 'dump | 3 : 'duplicate : "duplicate /N ..." | 4 : 'exclude : "exclude /N ... -from R" |}
 |-- ROP  /n 3  /group 'control  /rop {| /n : /name : /usage | 1 : 'equal : 'equal | 2 : 'fix : "fix R" | 3 : 'fix-join : "fix-join R" | 4 : 'if : "if R ..." | 5 : 'repeat : "repeat N R" | 6 : 'unless : "unless R R" | 7 : 'when : "when R R" |}
-|-- ROP  /n 4  /group 'cox  /rop {| /n : /name : /usage | 1 : 'add : "add /N E ..." | 2 : 'contain : "contain E" | 3 : 'keep : "keep E" | 4 : 'omit : "omit E" | 5 : 'omit-all : 'omit-all | 6 : 'range : "range /N -from E -to E" | 7 : 'replace-all : "replace-all -from E -to E" | 8 : 'split : "split /N E ..." | 9 : 'subst : "subst /N E ..." | 10 : 'unary : "unary /N E ..." |}
+|-- ROP  /n 4  /group 'cox  /rop {| /n : /name : /usage | 1 : 'add : "add /N E ..." | 2 : 'contain : "contain E" | 3 : 'fill : "fill /P E" | 4 : 'keep : "keep E" | 5 : 'omit : "omit E" | 6 : 'omit-all : 'omit-all | 7 : 'range : "range /N -from E -to E" | 8 : 'replace : "replace /P E" | 9 : 'replace-all : "replace-all -from E -to E" | 10 : 'split : "split /N E ..." | 11 : 'subst : "subst /N E ..." | 12 : 'unary : "unary /N E ..." |}
 |-- ROP  /n 5  /group 'empty  /rop {| /n : /name : /usage | 1 : 'both : "both R [-fill E]" | 2 : 'maybe : "maybe R [-fill E]" |}
 
 |-- ROP  /n 6  /group 'gadget  /rop {| /n : /name : /usage | 1 : 'contents : "contents /N" | 2 : 'number : "number /N -order /N ..." | 3 : 'rank : "rank /N -order /N ..." | 4 : 'size : "size /N" |}
@@ -193,14 +195,16 @@ Command `koshu koshu-rop-basic-table.k` produces:
 **                       ---- ------------------ ---------------------------------------------------------
 **                       1    'add               "add /N E ..."
 **                       2    'contain           "contain E"
-**                       3    'keep              "keep E"
-**                       4    'omit              "omit E"
-**                       5    'omit-all          'omit-all
-**                       6    'range             "range /N -from E -to E"
-**                       7    'replace-all       "replace-all -from E -to E"
-**                       8    'split             "split /N E ..."
-**                       9    'subst             "subst /N E ..."
-**                       10   'unary             "unary /N E ..."
+**                       3    'fill              "fill /P E"
+**                       4    'keep              "keep E"
+**                       5    'omit              "omit E"
+**                       6    'omit-all          'omit-all
+**                       7    'range             "range /N -from E -to E"
+**                       8    'replace           "replace /P E"
+**                       9    'replace-all       "replace-all -from E -to E"
+**                       10   'split             "split /N E ..."
+**                       11   'subst             "subst /N E ..."
+**                       12   'unary             "unary /N E ..."
 **                       
 **    5    'empty        /n   /name              /usage
 **                       ---- ------------------ ---------------------------------------------------------
