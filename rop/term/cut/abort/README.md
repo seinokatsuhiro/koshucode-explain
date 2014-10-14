@@ -126,8 +126,8 @@ Command `koshu cut-abort-unknown-term.k` exits with 2 and produces:
 **  Detail   Unknown
 **             /z
 **           Relation
-**             /x
-**             /y
+**             rel /x any
+**                 /y any
 **  Source   12 12 cut-abort-unknown-term.k
 **           > cut /x /z                    .. specialize
 **           12 0 cut-abort-unknown-term.k

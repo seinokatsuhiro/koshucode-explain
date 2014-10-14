@@ -36,9 +36,9 @@ Command `koshu rename-abort-conflict.k` exits with 2 and produces:
 **  Detail   Duplicated
 **             /y
 **           Relation
-**             /y
-**             /y
-**             /z
+**             rel /y any
+**                 /y any
+**                 /z any
 **  Source   7 8 rename-abort-conflict.k
 **           > rename /y /x              .. specialize
 **           6 0 rename-abort-conflict.k
@@ -80,9 +80,9 @@ Command `koshu rename-abort-duplicate.k` exits with 2 and produces:
 **  Detail   Duplicated
 **             /a
 **           Relation
-**             /a
-**             /a
-**             /z
+**             rel /a any
+**                 /a any
+**                 /z any
 **  Source   7 8 rename-abort-duplicate.k
 **           > rename /a /x               .. specialize
 **           6 0 rename-abort-duplicate.k
@@ -123,8 +123,8 @@ Command `koshu rename-abort-fork.k` exits with 2 and produces:
 **  Detail   Duplicated
 **             /x
 **           Relation
-**             /x
-**             /y
+**             rel /x any
+**                 /y any
 **  Source   7 8 rename-abort-fork.k
 **           > rename /a /x /b /x     .. specialize
 **           6 0 rename-abort-fork.k
@@ -244,8 +244,8 @@ Command `koshu rename-abort-unknown.k` exits with 2 and produces:
 **  Detail   Unknown
 **             /z
 **           Relation
-**             /x
-**             /y
+**             rel /x any
+**                 /y any
 **  Source   7 8 rename-abort-unknown.k
 **           > rename /c /z             .. specialize
 **           6 0 rename-abort-unknown.k
