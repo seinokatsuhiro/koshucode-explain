@@ -104,7 +104,7 @@ Command `koshu pick-abort-unknown-term.k` exits with 2 and produces:
 **  -------- ------------------------------ -------------
 **  Detail   Unknown
 **             /v
-**           Relation
+**           Input relation
 **             rel /x any
 **                 /y any
 **                 /z any
