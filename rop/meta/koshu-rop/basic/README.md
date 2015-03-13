@@ -8,7 +8,7 @@
 ## [koshu-rop-basic-name.k](koshu-rop-basic-name.k)
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 
 |== ROP : koshu-rop /name
 ```
@@ -156,15 +156,16 @@ Command `koshu koshu-rop-basic-name.k` produces:
 ## [koshu-rop-basic-table.k](koshu-rop-basic-table.k)
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 
-|== ROP -table -fore /n /group
-    : koshu-rop -group /group
-                -name  /name
-                -usage /usage
-    | nest ~ /group -to /rop
-    | for /rop ( number-by /name )
-    | number-by /group
+|== ROP
+  : koshu-rop -group /group
+              -name  /name
+              -usage /usage
+  | nest ~ /group -to /rop
+  | for /rop ( number-by /name )
+  | number-by /group
+  --table --fore /n /group
 
 number-by : number /n  -from 1  -order @'all
 ```

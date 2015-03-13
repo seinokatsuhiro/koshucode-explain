@@ -1,3 +1,3 @@
-** -*- koshu -*-
+-*- koshu -*-
 
 |== ROP : koshu-rop /name
