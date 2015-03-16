@@ -112,42 +112,44 @@ Command `koshu koshu-rop-basic-name.k` produces:
 |-- ROP  /name 'dump-tree
 |-- ROP  /name 'dependent-rank
 |-- ROP  /name 'size
-|-- ROP  /name 'cut
+|-- ROP  /name 'backward
 *** 75
 
+|-- ROP  /name 'cut
 |-- ROP  /name 'cut-term
+|-- ROP  /name 'forward
 |-- ROP  /name 'pick
 |-- ROP  /name 'pick-term
+
 |-- ROP  /name 'rename
 |-- ROP  /name 'move
-
 |-- ROP  /name 'prefix
 |-- ROP  /name 'prefix-change
 |-- ROP  /name 'unprefix
+
 |-- ROP  /name 'wipe
 |-- ROP  /name 'compose
-
 |-- ROP  /name 'join
 |-- ROP  /name 'meet
 |-- ROP  /name 'none
+
 |-- ROP  /name 'some
 |-- ROP  /name 'sub
-
 |-- ROP  /name 'dee
 |-- ROP  /name 'dum
 |-- ROP  /name 'empty
+
 |-- ROP  /name 'source
 |-- ROP  /name 'source-term
-
 |-- ROP  /name 'append
 |-- ROP  /name 'id
 
-*** 97 judges
+*** 99 judges
 
 **
 **  SUMMARY
-**      97 judges on ROP
-**      97 judges in total
+**      99 judges on ROP
+**      99 judges in total
 **
 ```
 
@@ -197,7 +199,7 @@ Command `koshu koshu-rop-basic-table.k` produces:
 |-- ROP  /n 14  /group 'resource  /rop {| /n : /name : /usage | 1 : 'koshu-res-article : "koshu-res-article /N" | 2 : 'koshu-res-rop : "koshu-res-rop /N /N" | 3 : 'koshu-res-sink : "koshu-res-sink /N /N" | 4 : 'koshu-res-sink-source : "koshu-res-sink-source /N /N" | 5 : 'koshu-res-source : "koshu-res-source /N" |}
 |-- ROP  /n 15  /group 'source  /rop {| /n : /name : /usage | 1 : 'dee : 'dee | 2 : 'dum : 'dum | 3 : 'empty : "empty /N ..." | 4 : 'source : "source P /N ..." | 5 : 'source-term : "source-term P R" |}
 
-|-- ROP  /n 16  /group 'term  /rop {| /n : /name : /usage | 1 : 'cut : "cut /P ..." | 2 : 'cut-term : "cut-term /R" | 3 : 'move : "move /P ... -to /N ..." | 4 : 'pick : "pick /P ..." | 5 : 'pick-term : "pick-term /R" | 6 : 'prefix : "prefix /P /N ..." | 7 : 'prefix-change : "prefix-change /P /Q" | 8 : 'rename : "rename /N /P ..." | 9 : 'unprefix : "unprefix /P" | 10 : 'wipe : 'wipe |}
+|-- ROP  /n 16  /group 'term  /rop {| /n : /name : /usage | 1 : 'backward : "backward /P ..." | 2 : 'cut : "cut /P ..." | 3 : 'cut-term : "cut-term /R" | 4 : 'forward : "forward /P ..." | 5 : 'move : "move /P ... -to /N ..." | 6 : 'pick : "pick /P ..." | 7 : 'pick-term : "pick-term /R" | 8 : 'prefix : "prefix /P /N ..." | 9 : 'prefix-change : "prefix-change /P /Q" | 10 : 'rename : "rename /N /P ..." | 11 : 'unprefix : "unprefix /P" | 12 : 'wipe : 'wipe |}
 
 *** 16 judges
 
@@ -339,16 +341,18 @@ Command `koshu koshu-rop-basic-table.k` produces:
 **                         
 **    16   'term           /n   /name                    /usage
 **                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'cut                     "cut /P ..."
-**                         2    'cut-term                "cut-term /R"
-**                         3    'move                    "move /P ... -to /N ..."
-**                         4    'pick                    "pick /P ..."
-**                         5    'pick-term               "pick-term /R"
-**                         6    'prefix                  "prefix /P /N ..."
-**                         7    'prefix-change           "prefix-change /P /Q"
-**                         8    'rename                  "rename /N /P ..."
-**                         9    'unprefix                "unprefix /P"
-**                         10   'wipe                    'wipe
+**                         1    'backward                "backward /P ..."
+**                         2    'cut                     "cut /P ..."
+**                         3    'cut-term                "cut-term /R"
+**                         4    'forward                 "forward /P ..."
+**                         5    'move                    "move /P ... -to /N ..."
+**                         6    'pick                    "pick /P ..."
+**                         7    'pick-term               "pick-term /R"
+**                         8    'prefix                  "prefix /P /N ..."
+**                         9    'prefix-change           "prefix-change /P /Q"
+**                         10   'rename                  "rename /N /P ..."
+**                         11   'unprefix                "unprefix /P"
+**                         12   'wipe                    'wipe
 **                         
 
 **
