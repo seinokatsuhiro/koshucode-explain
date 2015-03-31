@@ -203,157 +203,161 @@ Command `koshu koshu-rop-basic-table.k` produces:
 
 *** 16 judges
 
-**  TABLE : ROP
-**
-**    /n   /group          /rop
-**    ---- --------------- ---------------------------------------------------------------------------------------
-**    1    'builtin        /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'append                  "append R ..."
-**                         2    'id                      'id
-**                         
-**    2    'check          /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'check-term              "check-term [-just /N ... | -has /N ... | -but /N ...]"
-**                         2    'dump                    'dump
-**                         3    'duplicate               "duplicate /N ..."
-**                         4    'exclude                 "exclude /N ... -from R"
-**                         
-**    3    'control        /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'equal                   'equal
-**                         2    'fix                     "fix R"
-**                         3    'fix-join                "fix-join R"
-**                         4    'if                      "if R ..."
-**                         5    'unless                  "unless R R"
-**                         6    'when                    "when R R"
-**                         
-**    4    'cox-accessor   /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'clock                   "clock /N -PROP E ..."
-**                         2    'clock-alter             "clock-alter /P -PROP E ..."
-**                         3    'clock-get               "clock-get E -PROP /N ..."
-**                         
-**    5    'cox-calc       /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'add                     "add /N E ..."
-**                         2    'dump-cox                "dump-cox E"
-**                         3    'fill                    "fill /P E"
-**                         4    'range                   "range /N -from E -to E"
-**                         5    'range-day               "range-day /N -from /P to /P"
-**                         6    'range-hour              "range-hour /N -from /P to /P"
-**                         7    'range-minute            "range-minute /N -from /P to /P"
-**                         8    'range-month             "range-month /N -from /P to /P"
-**                         9    'range-second            "range-second /N -from /P to /P"
-**                         10   'range-year              "range-year /N -from /P to /P"
-**                         11   'replace                 "replace /P E"
-**                         12   'replace-all             "replace-all -from E -to E"
-**                         13   'split                   "split /N E ..."
-**                         14   'subst                   "subst /N E ..."
-**                         15   'unary                   "unary /N E ..."
-**                         
-**    6    'cox-empty      /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'both                    "both R [-fill E]"
-**                         2    'maybe                   "maybe R [-fill E]"
-**                         
-**    7    'cox-filter     /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'contain                 "contain E"
-**                         2    'keep                    "keep E"
-**                         3    'omit                    "omit E"
-**                         4    'omit-all                'omit-all
-**                         
-**    8    'cox-gadget     /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'const                   "const R"
-**                         2    'interp                  "interp E"
-**                         3    'number                  "number /N -order /N ..."
-**                         4    'rank                    "rank /N -order /N ..."
-**                         5    'repeat                  "repeat N R"
-**                         
-**    9    'gadget         /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'contents                "contents /N"
-**                         2    'dependent-rank          "dependent-rank /P /P -rank /N"
-**                         3    'dump-tree               "dump-tree X"
-**                         4    'size                    "size /N"
-**                         
-**    10   'lattice        /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'compose                 "compose R"
-**                         2    'join                    "join R"
-**                         3    'meet                    "meet R"
-**                         4    'none                    "none R"
-**                         5    'some                    "some R"
-**                         6    'sub                     "sub R"
-**                         
-**    11   'meta           /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'koshu-angle-text        "koshu-angle-text /N [/N]"
-**                         2    'koshu-cop               "koshu-cop /N"
-**                         3    'koshu-cop-infix         "koshu-cop-infix /N [-height /N][-dir /N]"
-**                         4    'koshu-proxy             "koshu-proxy /N /N"
-**                         5    'koshu-rop               "koshu-rop /N /N"
-**                         6    'koshu-source            "koshu-source /N [-name /N][-type /N]"
-**                         7    'koshu-version           "koshu-version /N"
-**                         
-**    12   'nest           /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'chunk                   "chunk /T ... [-order /P ...]"
-**                         2    'copy                    "copy N R"
-**                         3    'down                    "down /N"
-**                         4    'for                     "for /N R"
-**                         5    'group                   "group /N R"
-**                         6    'group-by                "group-by /N R"
-**                         7    'hang                    "hang /N -on /P ..."
-**                         8    'join-up                 "join-up /P ..."
-**                         9    'nest                    "nest [~] /P ... -to /N"
-**                         10   'slice                   "slice /N [R]"
-**                         11   'slice-up                "slice-up R"
-**                         12   'unnest                  "unnest /P"
-**                         13   'up                      "up /N"
-**                         
-**    13   'peripheral     /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'assn                    "assn /P ... -to N"
-**                         2    'member                  "member /N /N"
-**                         3    'rdf                     "rdf P /S /O"
-**                         4    'term-name               "term-name /N"
-**                         5    'today                   "today /N"
-**                         6    'unassn                  "unassn /P -only /P ..."
-**                         
-**    14   'resource       /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'koshu-res-article       "koshu-res-article /N"
-**                         2    'koshu-res-rop           "koshu-res-rop /N /N"
-**                         3    'koshu-res-sink          "koshu-res-sink /N /N"
-**                         4    'koshu-res-sink-source   "koshu-res-sink-source /N /N"
-**                         5    'koshu-res-source        "koshu-res-source /N"
-**                         
-**    15   'source         /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'dee                     'dee
-**                         2    'dum                     'dum
-**                         3    'empty                   "empty /N ..."
-**                         4    'source                  "source P /N ..."
-**                         5    'source-term             "source-term P R"
-**                         
-**    16   'term           /n   /name                    /usage
-**                         ---- ------------------------ ---------------------------------------------------------
-**                         1    'backward                "backward /P ..."
-**                         2    'cut                     "cut /P ..."
-**                         3    'cut-term                "cut-term /R"
-**                         4    'forward                 "forward /P ..."
-**                         5    'move                    "move /P ... -to /N ..."
-**                         6    'pick                    "pick /P ..."
-**                         7    'pick-term               "pick-term /R"
-**                         8    'prefix                  "prefix /P /N ..."
-**                         9    'prefix-change           "prefix-change /P /Q"
-**                         10   'rename                  "rename /N /P ..."
-**                         11   'unprefix                "unprefix /P"
-**                         12   'wipe                    'wipe
-**                         
+=== note
+
+TABLE : ROP
+
+  /n   /group          /rop
+  ---- --------------- ---------------------------------------------------------------------------------------
+  1    'builtin        /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'append                  "append R ..."
+                       2    'id                      'id
+                       
+  2    'check          /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'check-term              "check-term [-just /N ... | -has /N ... | -but /N ...]"
+                       2    'dump                    'dump
+                       3    'duplicate               "duplicate /N ..."
+                       4    'exclude                 "exclude /N ... -from R"
+                       
+  3    'control        /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'equal                   'equal
+                       2    'fix                     "fix R"
+                       3    'fix-join                "fix-join R"
+                       4    'if                      "if R ..."
+                       5    'unless                  "unless R R"
+                       6    'when                    "when R R"
+                       
+  4    'cox-accessor   /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'clock                   "clock /N -PROP E ..."
+                       2    'clock-alter             "clock-alter /P -PROP E ..."
+                       3    'clock-get               "clock-get E -PROP /N ..."
+                       
+  5    'cox-calc       /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'add                     "add /N E ..."
+                       2    'dump-cox                "dump-cox E"
+                       3    'fill                    "fill /P E"
+                       4    'range                   "range /N -from E -to E"
+                       5    'range-day               "range-day /N -from /P to /P"
+                       6    'range-hour              "range-hour /N -from /P to /P"
+                       7    'range-minute            "range-minute /N -from /P to /P"
+                       8    'range-month             "range-month /N -from /P to /P"
+                       9    'range-second            "range-second /N -from /P to /P"
+                       10   'range-year              "range-year /N -from /P to /P"
+                       11   'replace                 "replace /P E"
+                       12   'replace-all             "replace-all -from E -to E"
+                       13   'split                   "split /N E ..."
+                       14   'subst                   "subst /N E ..."
+                       15   'unary                   "unary /N E ..."
+                       
+  6    'cox-empty      /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'both                    "both R [-fill E]"
+                       2    'maybe                   "maybe R [-fill E]"
+                       
+  7    'cox-filter     /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'contain                 "contain E"
+                       2    'keep                    "keep E"
+                       3    'omit                    "omit E"
+                       4    'omit-all                'omit-all
+                       
+  8    'cox-gadget     /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'const                   "const R"
+                       2    'interp                  "interp E"
+                       3    'number                  "number /N -order /N ..."
+                       4    'rank                    "rank /N -order /N ..."
+                       5    'repeat                  "repeat N R"
+                       
+  9    'gadget         /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'contents                "contents /N"
+                       2    'dependent-rank          "dependent-rank /P /P -rank /N"
+                       3    'dump-tree               "dump-tree X"
+                       4    'size                    "size /N"
+                       
+  10   'lattice        /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'compose                 "compose R"
+                       2    'join                    "join R"
+                       3    'meet                    "meet R"
+                       4    'none                    "none R"
+                       5    'some                    "some R"
+                       6    'sub                     "sub R"
+                       
+  11   'meta           /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'koshu-angle-text        "koshu-angle-text /N [/N]"
+                       2    'koshu-cop               "koshu-cop /N"
+                       3    'koshu-cop-infix         "koshu-cop-infix /N [-height /N][-dir /N]"
+                       4    'koshu-proxy             "koshu-proxy /N /N"
+                       5    'koshu-rop               "koshu-rop /N /N"
+                       6    'koshu-source            "koshu-source /N [-name /N][-type /N]"
+                       7    'koshu-version           "koshu-version /N"
+                       
+  12   'nest           /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'chunk                   "chunk /T ... [-order /P ...]"
+                       2    'copy                    "copy N R"
+                       3    'down                    "down /N"
+                       4    'for                     "for /N R"
+                       5    'group                   "group /N R"
+                       6    'group-by                "group-by /N R"
+                       7    'hang                    "hang /N -on /P ..."
+                       8    'join-up                 "join-up /P ..."
+                       9    'nest                    "nest [~] /P ... -to /N"
+                       10   'slice                   "slice /N [R]"
+                       11   'slice-up                "slice-up R"
+                       12   'unnest                  "unnest /P"
+                       13   'up                      "up /N"
+                       
+  13   'peripheral     /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'assn                    "assn /P ... -to N"
+                       2    'member                  "member /N /N"
+                       3    'rdf                     "rdf P /S /O"
+                       4    'term-name               "term-name /N"
+                       5    'today                   "today /N"
+                       6    'unassn                  "unassn /P -only /P ..."
+                       
+  14   'resource       /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'koshu-res-article       "koshu-res-article /N"
+                       2    'koshu-res-rop           "koshu-res-rop /N /N"
+                       3    'koshu-res-sink          "koshu-res-sink /N /N"
+                       4    'koshu-res-sink-source   "koshu-res-sink-source /N /N"
+                       5    'koshu-res-source        "koshu-res-source /N"
+                       
+  15   'source         /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'dee                     'dee
+                       2    'dum                     'dum
+                       3    'empty                   "empty /N ..."
+                       4    'source                  "source P /N ..."
+                       5    'source-term             "source-term P R"
+                       
+  16   'term           /n   /name                    /usage
+                       ---- ------------------------ ---------------------------------------------------------
+                       1    'backward                "backward /P ..."
+                       2    'cut                     "cut /P ..."
+                       3    'cut-term                "cut-term /R"
+                       4    'forward                 "forward /P ..."
+                       5    'move                    "move /P ... -to /N ..."
+                       6    'pick                    "pick /P ..."
+                       7    'pick-term               "pick-term /R"
+                       8    'prefix                  "prefix /P /N ..."
+                       9    'prefix-change           "prefix-change /P /Q"
+                       10   'rename                  "rename /N /P ..."
+                       11   'unprefix                "unprefix /P"
+                       12   'wipe                    'wipe
+                       
+
+=== rel
 
 **
 **  SUMMARY
