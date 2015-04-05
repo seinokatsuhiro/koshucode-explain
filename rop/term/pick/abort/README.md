@@ -19,12 +19,6 @@ p : source P /x /y /z
 Command `koshu pick-abort-nested-term.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    pick-abort-nested-term.k
-**
-
 **
 **  ABORTED  Require term name
 **  -------- ----------------------------- ---------
@@ -56,12 +50,6 @@ p : source P /x /y /z
 Command `koshu pick-abort-non-term.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    pick-abort-non-term.k
-**
-
 **
 **  ABORTED  Require term name
 **  -------- -------------------------- ---------
@@ -93,12 +81,6 @@ p : source P /x /y /z
 Command `koshu pick-abort-unknown-term.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    pick-abort-unknown-term.k
-**
-
 **
 **  ABORTED  Unknown term name
 **  -------- ------------------------------ -------------

@@ -24,12 +24,6 @@
 Command `koshu rename-abort-conflict.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    rename-abort-conflict.k
-**
-
 **
 **  ABORTED  Duplicate term name
 **  -------- --------------------------- -------------
@@ -68,12 +62,6 @@ Command `koshu rename-abort-conflict.k` exits with 2 and produces:
 Command `koshu rename-abort-duplicate.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    rename-abort-duplicate.k
-**
-
 **
 **  ABORTED  Duplicate term name
 **  -------- ---------------------------- -------------
@@ -111,12 +99,6 @@ Command `koshu rename-abort-duplicate.k` exits with 2 and produces:
 Command `koshu rename-abort-fork.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    rename-abort-fork.k
-**
-
 **
 **  ABORTED  Duplicate term name
 **  -------- ------------------------ -------------
@@ -153,12 +135,6 @@ Command `koshu rename-abort-fork.k` exits with 2 and produces:
 Command `koshu rename-abort-not-term.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    rename-abort-not-term.k
-**
-
 **
 **  ABORTED  Require term name
 **  -------- ---------------------------- ---------
@@ -193,12 +169,6 @@ Command `koshu rename-abort-not-term.k` exits with 2 and produces:
 Command `koshu rename-abort-odd.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    rename-abort-odd.k
-**
-
 **
 **  ABORTED  Require term name
 **  -------- ------------------------ ---------
@@ -232,12 +202,6 @@ Command `koshu rename-abort-odd.k` exits with 2 and produces:
 Command `koshu rename-abort-unknown.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    rename-abort-unknown.k
-**
-
 **
 **  ABORTED  Unknown term name
 **  -------- -------------------------- -------------

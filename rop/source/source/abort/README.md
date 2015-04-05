@@ -21,12 +21,6 @@
 Command `koshu source-abort-dup-pattern.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    source-abort-dup-pattern.k
-**
-
 **
 **  ABORTED  Unexpected attribute
 **  -------- ----------------------------------------- ---------
@@ -60,12 +54,6 @@ Command `koshu source-abort-dup-pattern.k` exits with 2 and produces:
 Command `koshu source-abort-nested-term.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    source-abort-nested-term.k
-**
-
 **
 **  ABORTED  Require term name
 **  -------- ------------------------------- ---------
@@ -98,12 +86,6 @@ Command `koshu source-abort-nested-term.k` exits with 2 and produces:
 Command `koshu source-abort-no-pattern.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    source-abort-no-pattern.k
-**
-
 **
 **  ABORTED  Unexpected attribute
 **  -------- ------------------------------------- ---------
@@ -135,12 +117,6 @@ Command `koshu source-abort-no-pattern.k` exits with 2 and produces:
 Command `koshu source-abort-non-name.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    source-abort-non-name.k
-**
-
 **
 **  ABORTED  Require term name
 **  -------- ---------------------------- ---------

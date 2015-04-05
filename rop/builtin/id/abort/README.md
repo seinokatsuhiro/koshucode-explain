@@ -16,12 +16,6 @@
 Command `koshu id-abort-named-attr.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    id-abort-named-attr.k
-**
-
 **
 **  ABORTED  Unexpected attribute
 **  -------- ------------------------- ---------
@@ -50,12 +44,6 @@ Command `koshu id-abort-named-attr.k` exits with 2 and produces:
 Command `koshu id-abort-pos-attr.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    id-abort-pos-attr.k
-**
-
 **
 **  ABORTED  Unexpected attribute
 **  -------- ----------------------- ---------

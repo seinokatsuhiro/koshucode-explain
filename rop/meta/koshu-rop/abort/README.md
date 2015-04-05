@@ -19,12 +19,6 @@
 Command `koshu koshu-rop-abort-group.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    koshu-rop-abort-group.k
-**
-
 **
 **  ABORTED  Require term name
 **  -------- ------------------------------------ ---------
@@ -54,12 +48,6 @@ Command `koshu koshu-rop-abort-group.k` exits with 2 and produces:
 Command `koshu koshu-rop-abort-no-attrs.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    koshu-rop-abort-no-attrs.k
-**
-
 **
 **  ABORTED  Unexpected attribute
 **  -------- ------------------------------- ---------
@@ -88,12 +76,6 @@ Command `koshu koshu-rop-abort-no-attrs.k` exits with 2 and produces:
 Command `koshu koshu-rop-abort-not-term.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    koshu-rop-abort-not-term.k
-**
-
 **
 **  ABORTED  Require term name
 **  -------- ------------------------------- ---------
@@ -123,12 +105,6 @@ Command `koshu koshu-rop-abort-not-term.k` exits with 2 and produces:
 Command `koshu koshu-rop-abort-two-attrs.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    koshu-rop-abort-two-attrs.k
-**
-
 **
 **  ABORTED  Unexpected attribute
 **  -------- -------------------------------- ---------
@@ -159,12 +135,6 @@ Command `koshu koshu-rop-abort-two-attrs.k` exits with 2 and produces:
 Command `koshu koshu-rop-abort-usage.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    koshu-rop-abort-usage.k
-**
-
 **
 **  ABORTED  Require term name
 **  -------- ------------------------------------ ---------
