@@ -25,6 +25,9 @@ Command `koshu dee-equiv-const.k` produces:
 **  INPUT
 **    dee-equiv-const.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P
 
@@ -70,6 +73,9 @@ Command `koshu dee-equiv-join.k` produces:
 **  INPUT
 **    dee-equiv-join.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P
 
@@ -99,6 +105,9 @@ Command `koshu dee-equiv-noop.k` produces:
 **
 **  INPUT
 **    dee-equiv-noop.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- P

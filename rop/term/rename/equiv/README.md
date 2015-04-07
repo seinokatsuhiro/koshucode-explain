@@ -31,6 +31,9 @@ Command `koshu rename-equiv-move.k` produces:
 **  INPUT
 **    rename-equiv-move.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /a 1  /b 10  /z 50
 |-- Q  /a 1  /b 20  /z 60
@@ -79,6 +82,9 @@ Command `koshu rename-equiv-swap.k` produces:
 **
 **  INPUT
 **    rename-equiv-swap.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /y 1  /x 10  /z 50

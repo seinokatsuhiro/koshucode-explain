@@ -28,6 +28,9 @@ Command `koshu source-basic-empty.k` produces:
 **  INPUT
 **    source-basic-empty.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 *** no judges
 
@@ -61,6 +64,9 @@ Command `koshu source-basic-full-terms.k` produces:
 **
 **  INPUT
 **    source-basic-full-terms.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /x 1  /y 40
@@ -102,6 +108,9 @@ Command `koshu source-basic-no-terms.k` produces:
 **  INPUT
 **    source-basic-no-terms.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q
 
@@ -141,6 +150,9 @@ Command `koshu source-basic-ragged-judges.k` produces:
 **  INPUT
 **    source-basic-ragged-judges.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /x 1  /y 40
 |-- Q  /x 1  /y 50
@@ -179,6 +191,9 @@ Command `koshu source-basic-sub-terms.k` produces:
 **
 **  INPUT
 **    source-basic-sub-terms.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /x 1

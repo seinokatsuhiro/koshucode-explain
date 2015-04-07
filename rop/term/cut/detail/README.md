@@ -32,6 +32,9 @@ Command `koshu cut-detail-named-attr.k` produces:
 **  INPUT
 **    cut-detail-named-attr.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q
 
@@ -84,6 +87,9 @@ Command `koshu cut-detail-order.k` produces:
 **
 **  INPUT
 **    cut-detail-order.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /z 50

@@ -30,6 +30,9 @@ Command `koshu rename-detail-named-attr.k` produces:
 **  INPUT
 **    rename-detail-named-attr.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /a 1  /b 10
 |-- Q  /a 1  /b 20
@@ -69,6 +72,9 @@ Command `koshu rename-detail-no-terms.k` produces:
 **
 **  INPUT
 **    rename-detail-no-terms.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /x 1  /y 10

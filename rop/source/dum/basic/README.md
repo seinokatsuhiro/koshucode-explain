@@ -23,6 +23,9 @@ Command `koshu dum-basic-add.k` produces:
 **  INPUT
 **    dum-basic-add.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /r {| /a : /b |}
 
@@ -63,6 +66,9 @@ Command `koshu dum-basic-join.k` produces:
 **
 **  INPUT
 **    dum-basic-join.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- P  /r {| /x : /y | 1 : 40 | 1 : 50 | 2 : 60 |}
@@ -116,6 +122,9 @@ Command `koshu dum-basic-meet.k` produces:
 **  INPUT
 **    dum-basic-meet.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /r {| /x : /y |}
 
@@ -151,6 +160,9 @@ Command `koshu dum-basic-size.k` produces:
 **
 **  INPUT
 **    dum-basic-size.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 *** no judges

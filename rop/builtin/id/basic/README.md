@@ -28,6 +28,9 @@ Command `koshu id-basic.k` produces:
 **  INPUT
 **    id-basic.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /x 1  /y 10  /z 50
 |-- Q  /x 1  /y 12  /z 60

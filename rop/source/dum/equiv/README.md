@@ -23,6 +23,9 @@ Command `koshu dum-equiv-const.k` produces:
 **  INPUT
 **    dum-equiv-const.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /r {| |}
 

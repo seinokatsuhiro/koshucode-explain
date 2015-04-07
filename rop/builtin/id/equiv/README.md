@@ -29,6 +29,9 @@ Command `koshu id-equiv-cut.k` produces:
 **  INPUT
 **    id-equiv-cut.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /x 1  /y 10  /z 50
 |-- Q  /x 1  /y 12  /z 60
@@ -75,6 +78,9 @@ Command `koshu id-equiv-keep.k` produces:
 **
 **  INPUT
 **    id-equiv-keep.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /x 1  /y 10  /z 50
@@ -128,6 +134,9 @@ Command `koshu id-equiv-meet.k` produces:
 **
 **  INPUT
 **    id-equiv-meet.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /x 1  /y 10  /z 50

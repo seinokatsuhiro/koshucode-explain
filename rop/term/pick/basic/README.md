@@ -29,6 +29,9 @@ Command `koshu pick-basic-all-none.k` produces:
 **  INPUT
 **    pick-basic-all-none.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /x 1  /y 10  /z 50
 |-- Q  /x 1  /y 12  /z 60
@@ -78,6 +81,9 @@ Command `koshu pick-basic-many-terms.k` produces:
 **  INPUT
 **    pick-basic-many-terms.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- VOWEL  /a 1  /e 5  /i 9  /o 15  /u 21  /y 25
 
@@ -119,6 +125,9 @@ Command `koshu pick-basic-xy.k` produces:
 **
 **  INPUT
 **    pick-basic-xy.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /x 1  /y 10

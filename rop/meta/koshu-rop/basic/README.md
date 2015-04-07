@@ -21,6 +21,9 @@ Command `koshu koshu-rop-basic-name.k` produces:
 **  INPUT
 **    koshu-rop-basic-name.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- ROP  /name 'clock
 |-- ROP  /name 'clock-get
@@ -94,62 +97,66 @@ Command `koshu koshu-rop-basic-name.k` produces:
 |-- ROP  /name 'duplicate
 |-- ROP  /name 'exclude
 |-- ROP  /name 'assn
-|-- ROP  /name 'member
+|-- ROP  /name 'index-elem
 
+|-- ROP  /name 'member
 |-- ROP  /name 'rdf
 |-- ROP  /name 'term-name
 |-- ROP  /name 'today
 |-- ROP  /name 'unassn
-|-- ROP  /name 'equal
 
+|-- ROP  /name 'uncollect
+|-- ROP  /name 'equal
 |-- ROP  /name 'fix
 |-- ROP  /name 'fix-join
 |-- ROP  /name 'if
+
 |-- ROP  /name 'unless
 |-- ROP  /name 'when
-
 |-- ROP  /name 'contents
 |-- ROP  /name 'dump-tree
 |-- ROP  /name 'dependent-rank
-|-- ROP  /name 'size
-|-- ROP  /name 'backward
 *** 75
 
+|-- ROP  /name 'size
+|-- ROP  /name 'backward
 |-- ROP  /name 'cut
 |-- ROP  /name 'cut-term
 |-- ROP  /name 'forward
+
 |-- ROP  /name 'pick
 |-- ROP  /name 'pick-term
-
 |-- ROP  /name 'rename
 |-- ROP  /name 'move
 |-- ROP  /name 'prefix
+
 |-- ROP  /name 'prefix-change
 |-- ROP  /name 'unprefix
-
 |-- ROP  /name 'wipe
 |-- ROP  /name 'compose
 |-- ROP  /name 'join
+
 |-- ROP  /name 'meet
 |-- ROP  /name 'none
-
 |-- ROP  /name 'some
 |-- ROP  /name 'sub
 |-- ROP  /name 'dee
+
 |-- ROP  /name 'dum
 |-- ROP  /name 'empty
-
 |-- ROP  /name 'source
 |-- ROP  /name 'source-term
 |-- ROP  /name 'append
+*** 100
+
 |-- ROP  /name 'id
 
-*** 99 judges
+*** 101 judges
 
 **
 **  SUMMARY
-**      99 judges on ROP
-**      99 judges in total
+**     101 judges on ROP
+**     101 judges in total
 **
 ```
 
@@ -180,6 +187,9 @@ Command `koshu koshu-rop-basic-table.k` produces:
 **  INPUT
 **    koshu-rop-basic-table.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- ROP  /n 1  /group 'builtin  /rop {| /n : /name : /usage | 1 : 'append : "append R ..." | 2 : 'id : 'id |}
 |-- ROP  /n 2  /group 'check  /rop {| /n : /name : /usage | 1 : 'check-term : "check-term [-just /N ... | -has /N ... | -but /N ...]" | 2 : 'dump : 'dump | 3 : 'duplicate : "duplicate /N ..." | 4 : 'exclude : "exclude /N ... -from R" |}
@@ -195,7 +205,7 @@ Command `koshu koshu-rop-basic-table.k` produces:
 
 |-- ROP  /n 11  /group 'meta  /rop {| /n : /name : /usage | 1 : 'koshu-angle-text : "koshu-angle-text /N [/N]" | 2 : 'koshu-cop : "koshu-cop /N" | 3 : 'koshu-cop-infix : "koshu-cop-infix /N [-height /N][-dir /N]" | 4 : 'koshu-proxy : "koshu-proxy /N /N" | 5 : 'koshu-rop : "koshu-rop /N /N" | 6 : 'koshu-source : "koshu-source /N [-name /N][-type /N]" | 7 : 'koshu-version : "koshu-version /N" |}
 |-- ROP  /n 12  /group 'nest  /rop {| /n : /name : /usage | 1 : 'chunk : "chunk /T ... [-order /P ...]" | 2 : 'copy : "copy N R" | 3 : 'down : "down /N" | 4 : 'for : "for /N R" | 5 : 'group : "group /N R" | 6 : 'group-by : "group-by /N R" | 7 : 'hang : "hang /N -on /P ..." | 8 : 'join-up : "join-up /P ..." | 9 : 'nest : "nest [~] /P ... -to /N" | 10 : 'slice : "slice /N [R]" | 11 : 'slice-up : "slice-up R" | 12 : 'unnest : "unnest /P" | 13 : 'up : "up /N" |}
-|-- ROP  /n 13  /group 'peripheral  /rop {| /n : /name : /usage | 1 : 'assn : "assn /P ... -to N" | 2 : 'member : "member /N /N" | 3 : 'rdf : "rdf P /S /O" | 4 : 'term-name : "term-name /N" | 5 : 'today : "today /N" | 6 : 'unassn : "unassn /P -only /P ..." |}
+|-- ROP  /n 13  /group 'peripheral  /rop {| /n : /name : /usage | 1 : 'assn : "assn /P ... -to N" | 2 : 'index-elem : "index-elem /N /N /P" | 3 : 'member : "member /N /N" | 4 : 'rdf : "rdf P /S /O" | 5 : 'term-name : "term-name /N" | 6 : 'today : "today /N" | 7 : 'unassn : "unassn /P -only /P ..." | 8 : 'uncollect : "uncollect /P -to /N ..." |}
 |-- ROP  /n 14  /group 'resource  /rop {| /n : /name : /usage | 1 : 'koshu-res-article : "koshu-res-article /N" | 2 : 'koshu-res-rop : "koshu-res-rop /N /N" | 3 : 'koshu-res-sink : "koshu-res-sink /N /N" | 4 : 'koshu-res-sink-source : "koshu-res-sink-source /N /N" | 5 : 'koshu-res-source : "koshu-res-source /N" |}
 |-- ROP  /n 15  /group 'source  /rop {| /n : /name : /usage | 1 : 'dee : 'dee | 2 : 'dum : 'dum | 3 : 'empty : "empty /N ..." | 4 : 'source : "source P /N ..." | 5 : 'source-term : "source-term P R" |}
 
@@ -319,11 +329,13 @@ TABLE : ROP
   13   'peripheral     /n   /name                    /usage
                        ---- ------------------------ ---------------------------------------------------------
                        1    'assn                    "assn /P ... -to N"
-                       2    'member                  "member /N /N"
-                       3    'rdf                     "rdf P /S /O"
-                       4    'term-name               "term-name /N"
-                       5    'today                   "today /N"
-                       6    'unassn                  "unassn /P -only /P ..."
+                       2    'index-elem              "index-elem /N /N /P"
+                       3    'member                  "member /N /N"
+                       4    'rdf                     "rdf P /S /O"
+                       5    'term-name               "term-name /N"
+                       6    'today                   "today /N"
+                       7    'unassn                  "unassn /P -only /P ..."
+                       8    'uncollect               "uncollect /P -to /N ..."
                        
   14   'resource       /n   /name                    /usage
                        ---- ------------------------ ---------------------------------------------------------

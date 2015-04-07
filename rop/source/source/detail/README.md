@@ -28,6 +28,9 @@ Command `koshu source-detail-named-attr.k` produces:
 **  INPUT
 **    source-detail-named-attr.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /x 1  /y 40
 |-- Q  /x 1  /y 50

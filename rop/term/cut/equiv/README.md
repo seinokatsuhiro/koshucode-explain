@@ -33,6 +33,9 @@ Command `koshu cut-equiv-join.k` produces:
 **  INPUT
 **    cut-equiv-join.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /x 1
 |-- Q  /x 2
@@ -79,6 +82,9 @@ Command `koshu cut-equiv-pick.k` produces:
 **
 **  INPUT
 **    cut-equiv-pick.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /x 1
@@ -127,6 +133,9 @@ Command `koshu cut-equiv-relmap.k` produces:
 **
 **  INPUT
 **    cut-equiv-relmap.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /x 1

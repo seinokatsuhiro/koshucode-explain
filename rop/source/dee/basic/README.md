@@ -23,6 +23,9 @@ Command `koshu dee-basic-add.k` produces:
 **  INPUT
 **    dee-basic-add.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /a 1  /b 20
 
@@ -59,6 +62,9 @@ Command `koshu dee-basic-join.k` produces:
 **
 **  INPUT
 **    dee-basic-join.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- P  /x 1  /y 40
@@ -104,6 +110,9 @@ Command `koshu dee-basic-meet.k` produces:
 **  INPUT
 **    dee-basic-meet.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /x 1  /y 40
 |-- P  /x 1  /y 50
@@ -143,6 +152,9 @@ Command `koshu dee-basic-size.k` produces:
 **
 **  INPUT
 **    dee-basic-size.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- P

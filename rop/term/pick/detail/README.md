@@ -28,6 +28,9 @@ Command `koshu pick-detail-named-attr.k` produces:
 **  INPUT
 **    pick-detail-named-attr.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /x 1  /y 10
 |-- Q  /x 1  /y 12

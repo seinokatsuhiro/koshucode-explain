@@ -31,6 +31,9 @@ Command `koshu rename-basic-cycle.k` produces:
 **  INPUT
 **    rename-basic-cycle.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /y 1  /z 10  /x 50
 |-- Q  /y 1  /z 20  /x 60
@@ -72,6 +75,9 @@ Command `koshu rename-basic-xy.k` produces:
 **
 **  INPUT
 **    rename-basic-xy.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /a 1  /b 10  /z 50

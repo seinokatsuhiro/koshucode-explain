@@ -30,6 +30,9 @@ Command `koshu source-equiv-relmap.k` produces:
 **  INPUT
 **    source-equiv-relmap.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /x 1  /y 40
 |-- Q  /x 1  /y 50
