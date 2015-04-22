@@ -138,25 +138,27 @@ Command `koshu koshu-rop-basic-name.k` produces:
 
 |-- ROP  /name 'meet
 |-- ROP  /name 'none
+|-- ROP  /name 'none-meet
 |-- ROP  /name 'some
+|-- ROP  /name 'some-meet
+
 |-- ROP  /name 'sub
 |-- ROP  /name 'dee
-
 |-- ROP  /name 'dum
 |-- ROP  /name 'empty
 |-- ROP  /name 'source
-|-- ROP  /name 'source-term
-|-- ROP  /name 'append
 *** 100
 
+|-- ROP  /name 'source-term
+|-- ROP  /name 'append
 |-- ROP  /name 'id
 
-*** 101 judges
+*** 103 judges
 
 **
 **  SUMMARY
-**     101 judges on ROP
-**     101 judges in total
+**     103 judges on ROP
+**     103 judges in total
 **
 ```
 
@@ -201,7 +203,7 @@ Command `koshu koshu-rop-basic-table.k` produces:
 |-- ROP  /n 7  /group 'cox-filter  /rop {| /n : /name : /usage | 1 : 'contain : "contain E" | 2 : 'keep : "keep E" | 3 : 'omit : "omit E" | 4 : 'omit-all : 'omit-all |}
 |-- ROP  /n 8  /group 'cox-gadget  /rop {| /n : /name : /usage | 1 : 'const : "const R" | 2 : 'interp : "interp E" | 3 : 'number : "number /N -order /N ..." | 4 : 'rank : "rank /N -order /N ..." | 5 : 'repeat : "repeat N R" |}
 |-- ROP  /n 9  /group 'gadget  /rop {| /n : /name : /usage | 1 : 'contents : "contents /N" | 2 : 'dependent-rank : "dependent-rank /P /P -rank /N" | 3 : 'dump-tree : "dump-tree X" | 4 : 'size : "size /N" |}
-|-- ROP  /n 10  /group 'lattice  /rop {| /n : /name : /usage | 1 : 'compose : "compose R" | 2 : 'join : "join R" | 3 : 'meet : "meet R" | 4 : 'none : "none R" | 5 : 'some : "some R" | 6 : 'sub : "sub R" |}
+|-- ROP  /n 10  /group 'lattice  /rop {| /n : /name : /usage | 1 : 'compose : "compose R" | 2 : 'join : "join R" | 3 : 'meet : "meet R" | 4 : 'none : "none R" | 5 : 'none-meet : "none-meet R" | 6 : 'some : "some R" | 7 : 'some-meet : "some-meet R" | 8 : 'sub : "sub R" |}
 
 |-- ROP  /n 11  /group 'meta  /rop {| /n : /name : /usage | 1 : 'koshu-angle-text : "koshu-angle-text /N [/N]" | 2 : 'koshu-cop : "koshu-cop /N" | 3 : 'koshu-cop-infix : "koshu-cop-infix /N [-height /N][-dir /N]" | 4 : 'koshu-proxy : "koshu-proxy /N /N" | 5 : 'koshu-rop : "koshu-rop /N /N" | 6 : 'koshu-source : "koshu-source /N [-name /N][-type /N]" | 7 : 'koshu-version : "koshu-version /N" |}
 |-- ROP  /n 12  /group 'nest  /rop {| /n : /name : /usage | 1 : 'chunk : "chunk /T ... [-order /P ...]" | 2 : 'copy : "copy N R" | 3 : 'down : "down /N" | 4 : 'for : "for /N R" | 5 : 'group : "group /N R" | 6 : 'group-by : "group-by /N R" | 7 : 'hang : "hang /N -on /P ..." | 8 : 'join-up : "join-up /P ..." | 9 : 'nest : "nest [~] /P ... -to /N" | 10 : 'slice : "slice /N [R]" | 11 : 'slice-up : "slice-up R" | 12 : 'unnest : "unnest /P" | 13 : 'up : "up /N" |}
@@ -297,8 +299,10 @@ TABLE : ROP
                        2    'join                    "join R"
                        3    'meet                    "meet R"
                        4    'none                    "none R"
-                       5    'some                    "some R"
-                       6    'sub                     "sub R"
+                       5    'none-meet               "none-meet R"
+                       6    'some                    "some R"
+                       7    'some-meet               "some-meet R"
+                       8    'sub                     "sub R"
                        
   11   'meta           /n   /name                    /usage
                        ---- ------------------------ ---------------------------------------------------------
