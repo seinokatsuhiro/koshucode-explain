@@ -173,6 +173,7 @@ Command `koshu dum-basic-size.k` produces:
 
 **
 **  SUMMARY
+**      no judges on P
 **       1 judge  on Q
 **       1 judge  in total
 **

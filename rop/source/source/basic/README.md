@@ -36,6 +36,7 @@ Command `koshu source-basic-empty.k` produces:
 
 **
 **  SUMMARY
+**      no judges on Q
 **      no judges in total
 **
 ```
@@ -121,6 +122,7 @@ Command `koshu source-basic-no-terms.k` produces:
 **
 **  SUMMARY
 **       1 judge  on Q
+**      no judges on R
 **       1 judge  in total
 **
 ```
