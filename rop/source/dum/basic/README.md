@@ -27,7 +27,7 @@ Command `koshu dum-basic-add.k` produces:
 **    <stdout>
 **
 
-|-- P  /r {| /a : /b |}
+|-- P  /r {| /a /b |}
 
 *** 1 judge 
 
@@ -71,15 +71,15 @@ Command `koshu dum-basic-join.k` produces:
 **    <stdout>
 **
 
-|-- P  /r {| /x : /y | 1 : 40 | 1 : 50 | 2 : 60 |}
+|-- P  /r {| /x /y [ 1 | 40 ] [ 1 | 50 ] [ 2 | 60 ] |}
 
 *** 1 judge 
 
-|-- P2  /r {| | |}
+|-- P2  /r {| [ ] |}
 
 *** 1 judge 
 
-|-- Q  /r {| /x : /y |}
+|-- Q  /r {| /x /y |}
 
 *** 1 judge 
 
@@ -126,11 +126,11 @@ Command `koshu dum-basic-meet.k` produces:
 **    <stdout>
 **
 
-|-- P  /r {| /x : /y |}
+|-- P  /r {| /x /y |}
 
 *** 1 judge 
 
-|-- Q  /r {| /x : /y |}
+|-- Q  /r {| /x /y |}
 
 *** 1 judge 
 
