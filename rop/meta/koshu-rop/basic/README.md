@@ -206,7 +206,7 @@ Command `koshu koshu-rop-basic-table.k` produces:
 |-- ROP  /n 10  /group 'lattice  /rop {| /n /name /usage [ 1 | 'compose | "compose R" ] [ 2 | 'join | "join R" ] [ 3 | 'meet | "meet R" ] [ 4 | 'none | "none R" ] [ 5 | 'none-meet | "none-meet R" ] [ 6 | 'some | "some R" ] [ 7 | 'some-meet | "some-meet R" ] [ 8 | 'sub | "sub R" ] |}
 
 |-- ROP  /n 11  /group 'meta  /rop {| /n /name /usage [ 1 | 'koshu-angle-text | "koshu-angle-text /N [/N]" ] [ 2 | 'koshu-cop | "koshu-cop /N" ] [ 3 | 'koshu-cop-infix | "koshu-cop-infix /N [-height /N][-dir /N]" ] [ 4 | 'koshu-proxy | "koshu-proxy /N /N" ] [ 5 | 'koshu-rop | "koshu-rop /N /N" ] [ 6 | 'koshu-source | "koshu-source /N [-name /N][-type /N]" ] [ 7 | 'koshu-version | "koshu-version /N" ] |}
-|-- ROP  /n 12  /group 'nest  /rop {| /n /name /usage [ 1 | 'chunk | "chunk /T ... [-order /P ...]" ] [ 2 | 'copy | "copy N R" ] [ 3 | 'down | "down /N" ] [ 4 | 'for | "for /N R" ] [ 5 | 'group | "group /N R" ] [ 6 | 'join-up | "join-up /P ..." ] [ 7 | 'nest | "nest [~] /P ... -to /N" ] [ 8 | 'opp-group | "opp-group R -to /N" ] [ 9 | 'pick-group | "pick-group /P ... -to /N" ] [ 10 | 'slice | "slice /N [R]" ] [ 11 | 'slice-up | "slice-up R" ] [ 12 | 'ungroup | "ungroup /P" ] [ 13 | 'up | "up /N" ] |}
+|-- ROP  /n 12  /group 'nest  /rop {| /n /name /usage [ 1 | 'chunk | "chunk /T ... [-order /P ...]" ] [ 2 | 'copy | "copy N R" ] [ 3 | 'down | "down /N" ] [ 4 | 'for | "for /N R" ] [ 5 | 'group | "group R -to /N " ] [ 6 | 'join-up | "join-up /P ..." ] [ 7 | 'nest | "nest [~] /P ... -to /N" ] [ 8 | 'opp-group | "opp-group R -to /N" ] [ 9 | 'pick-group | "pick-group /P ... -to /N" ] [ 10 | 'slice | "slice /N [R]" ] [ 11 | 'slice-up | "slice-up R" ] [ 12 | 'ungroup | "ungroup /P" ] [ 13 | 'up | "up /N" ] |}
 |-- ROP  /n 13  /group 'peripheral  /rop {| /n /name /usage [ 1 | 'assn | "assn /P ... -to N" ] [ 2 | 'index-elem | "index-elem /N /N /P" ] [ 3 | 'member | "member /N /N" ] [ 4 | 'rdf | "rdf P /S /O" ] [ 5 | 'term-name | "term-name /N" ] [ 6 | 'today | "today /N" ] [ 7 | 'unassn | "unassn /P -only /P ..." ] [ 8 | 'uncollect | "uncollect /P -to /N ..." ] |}
 |-- ROP  /n 14  /group 'resource  /rop {| /n /name /usage [ 1 | 'koshu-res-article | "koshu-res-article /N" ] [ 2 | 'koshu-res-rop | "koshu-res-rop /N /N" ] [ 3 | 'koshu-res-sink | "koshu-res-sink /N /N" ] [ 4 | 'koshu-res-sink-source | "koshu-res-sink-source /N /N" ] [ 5 | 'koshu-res-source | "koshu-res-source /N" ] |}
 |-- ROP  /n 15  /group 'source  /rop {| /n /name /usage [ 1 | 'dee | 'dee ] [ 2 | 'dum | 'dum ] [ 3 | 'empty | "empty /N ..." ] [ 4 | 'source | "source P /N ..." ] [ 5 | 'source-term | "source-term P R" ] |}
@@ -320,7 +320,7 @@ TABLE : ROP
                        2    'copy                    "copy N R"
                        3    'down                    "down /N"
                        4    'for                     "for /N R"
-                       5    'group                   "group /N R"
+                       5    'group                   "group R -to /N "
                        6    'join-up                 "join-up /P ..."
                        7    'nest                    "nest [~] /P ... -to /N"
                        8    'opp-group               "opp-group R -to /N"

@@ -9,4 +9,4 @@
 
 p : source P /x /y
 
-|== Q : p | cut /x | group /g p | cut /g/x
+|== Q : p | cut /x | group p -to /g | cut /g/x

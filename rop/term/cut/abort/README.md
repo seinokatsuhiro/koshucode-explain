@@ -20,7 +20,7 @@
 
 p : source P /x /y
 
-|== Q : p | cut /x | group /g p | cut /g/x
+|== Q : p | cut /x | group p -to /g | cut /g/x
 ```
 
 Command `koshu cut-abort-nested-term.k` exits with 2 and produces:
@@ -28,13 +28,13 @@ Command `koshu cut-abort-nested-term.k` exits with 2 and produces:
 ```
 **
 **  ABORTED  Require term name
-**  -------- -------------------------------------------- ---------
-**  Source   12 38 cut-abort-nested-term.k
-**           > /g/x                                       .. attr
-**           12 34 cut-abort-nested-term.k
-**           > cut /g/x                                   .. relmap
+**  -------- ------------------------------------------------ ---------
+**  Source   12 42 cut-abort-nested-term.k
+**           > /g/x                                           .. attr
+**           12 38 cut-abort-nested-term.k
+**           > cut /g/x                                       .. relmap
 **           12 0 cut-abort-nested-term.k
-**           > |== Q : p | cut /x | group /g p | cut /g/x .. assert
+**           > |== Q : p | cut /x | group p -to /g | cut /g/x .. assert
 **  Command  koshu
 **           cut-abort-nested-term.k
 **
