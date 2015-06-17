@@ -118,47 +118,49 @@ Command `koshu koshu-rop-basic-name.k` produces:
 |-- ROP  /name 'dependent-rank
 *** 75
 
+|-- ROP  /name 'eqlize
+|-- ROP  /name 'visit-distance
 |-- ROP  /name 'size
 |-- ROP  /name 'backward
 |-- ROP  /name 'cut
+
 |-- ROP  /name 'cut-term
 |-- ROP  /name 'forward
-
 |-- ROP  /name 'pick
 |-- ROP  /name 'pick-term
 |-- ROP  /name 'rename
+
 |-- ROP  /name 'move
 |-- ROP  /name 'prefix
-
 |-- ROP  /name 'prefix-change
 |-- ROP  /name 'unprefix
 |-- ROP  /name 'wipe
+
 |-- ROP  /name 'compose
 |-- ROP  /name 'join
-
 |-- ROP  /name 'meet
 |-- ROP  /name 'none
 |-- ROP  /name 'none-meet
+
 |-- ROP  /name 'some
 |-- ROP  /name 'some-meet
-
 |-- ROP  /name 'sub
 |-- ROP  /name 'dee
 |-- ROP  /name 'dum
-|-- ROP  /name 'empty
-|-- ROP  /name 'source
 *** 100
 
+|-- ROP  /name 'empty
+|-- ROP  /name 'source
 |-- ROP  /name 'source-term
 |-- ROP  /name 'append
 |-- ROP  /name 'id
 
-*** 103 judges
+*** 105 judges
 
 **
 **  SUMMARY
-**     103 judges on ROP
-**     103 judges in total
+**     105 judges on ROP
+**     105 judges in total
 **
 ```
 
@@ -197,12 +199,12 @@ Command `koshu koshu-rop-basic-table.k` produces:
 |-- ROP  /n 2  /group 'check  /rop {| /n /name /usage [ 1 | 'check-term | "check-term [-just /N ... | -has /N ... | -but /N ...]" ] [ 2 | 'dump | 'dump ] [ 3 | 'duplicate | "duplicate /N ..." ] [ 4 | 'exclude | "exclude /N ... -from R" ] |}
 |-- ROP  /n 3  /group 'control  /rop {| /n /name /usage [ 1 | 'equal | 'equal ] [ 2 | 'fix | "fix R" ] [ 3 | 'fix-join | "fix-join R" ] [ 4 | 'if | "if R ..." ] [ 5 | 'unless | "unless R R" ] [ 6 | 'when | "when R R" ] |}
 |-- ROP  /n 4  /group 'cox-accessor  /rop {| /n /name /usage [ 1 | 'clock | "clock /N -PROP E ..." ] [ 2 | 'clock-alter | "clock-alter /P -PROP E ..." ] [ 3 | 'clock-get | "clock-get E -PROP /N ..." ] |}
-|-- ROP  /n 5  /group 'cox-calc  /rop {| /n /name /usage [ 1 | 'add | "add /N E ..." ] [ 2 | 'dump-cox | "dump-cox E" ] [ 3 | 'fill | "fill /P E" ] [ 4 | 'range | "range /N -from E -to E" ] [ 5 | 'range-day | "range-day /N -from /P to /P" ] [ 6 | 'range-hour | "range-hour /N -from /P to /P" ] [ 7 | 'range-minute | "range-minute /N -from /P to /P" ] [ 8 | 'range-month | "range-month /N -from /P to /P" ] [ 9 | 'range-second | "range-second /N -from /P to /P" ] [ 10 | 'range-year | "range-year /N -from /P to /P" ] [ 11 | 'replace | "replace /P E" ] [ 12 | 'replace-all | "replace-all -from E -to E" ] [ 13 | 'split | "split /N E ..." ] [ 14 | 'subst | "subst /N E ..." ] [ 15 | 'unary | "unary /N E ..." ] |}
+|-- ROP  /n 5  /group 'cox-calc  /rop {| /n /name /usage [ 1 | 'add | "add /N E ..." ] [ 2 | 'dump-cox | "dump-cox E" ] [ 3 | 'fill | "fill /P ... -with E" ] [ 4 | 'range | "range /N -from E -to E" ] [ 5 | 'range-day | "range-day /N -from /P to /P" ] [ 6 | 'range-hour | "range-hour /N -from /P to /P" ] [ 7 | 'range-minute | "range-minute /N -from /P to /P" ] [ 8 | 'range-month | "range-month /N -from /P to /P" ] [ 9 | 'range-second | "range-second /N -from /P to /P" ] [ 10 | 'range-year | "range-year /N -from /P to /P" ] [ 11 | 'replace | "replace /P ... -by F" ] [ 12 | 'replace-all | "replace-all -from E -to E" ] [ 13 | 'split | "split /N E ..." ] [ 14 | 'subst | "subst /N E ..." ] [ 15 | 'unary | "unary /N E ..." ] |}
 
 |-- ROP  /n 6  /group 'cox-empty  /rop {| /n /name /usage [ 1 | 'both | "both R [-fill E]" ] [ 2 | 'maybe | "maybe R [-fill E]" ] |}
 |-- ROP  /n 7  /group 'cox-filter  /rop {| /n /name /usage [ 1 | 'contain | "contain E" ] [ 2 | 'keep | "keep E" ] [ 3 | 'omit | "omit E" ] [ 4 | 'omit-all | 'omit-all ] |}
 |-- ROP  /n 8  /group 'cox-gadget  /rop {| /n /name /usage [ 1 | 'const | "const R" ] [ 2 | 'interp | "interp E" ] [ 3 | 'number | "number /N -order /N ..." ] [ 4 | 'rank | "rank /N -order /N ..." ] [ 5 | 'repeat | "repeat N R" ] |}
-|-- ROP  /n 9  /group 'gadget  /rop {| /n /name /usage [ 1 | 'contents | "contents /N" ] [ 2 | 'dependent-rank | "dependent-rank /P /P -rank /N" ] [ 3 | 'dump-tree | "dump-tree X" ] [ 4 | 'size | "size /N" ] |}
+|-- ROP  /n 9  /group 'gadget  /rop {| /n /name /usage [ 1 | 'contents | "contents /N" ] [ 2 | 'dependent-rank | "dependent-rank /P /P -rank /N" ] [ 3 | 'dump-tree | "dump-tree X" ] [ 4 | 'eqlize | 'eqlize ] [ 5 | 'size | "size /N" ] [ 6 | 'visit-distance | "visit-distance R -step /P ... -to /N -distance /N" ] |}
 |-- ROP  /n 10  /group 'lattice  /rop {| /n /name /usage [ 1 | 'compose | "compose R" ] [ 2 | 'join | "join R" ] [ 3 | 'meet | "meet R" ] [ 4 | 'none | "none R" ] [ 5 | 'none-meet | "none-meet R" ] [ 6 | 'some | "some R" ] [ 7 | 'some-meet | "some-meet R" ] [ 8 | 'sub | "sub R" ] |}
 
 |-- ROP  /n 11  /group 'meta  /rop {| /n /name /usage [ 1 | 'koshu-angle-text | "koshu-angle-text /N [/N]" ] [ 2 | 'koshu-cop | "koshu-cop /N" ] [ 3 | 'koshu-cop-infix | "koshu-cop-infix /N [-height /N][-dir /N]" ] [ 4 | 'koshu-proxy | "koshu-proxy /N /N" ] [ 5 | 'koshu-rop | "koshu-rop /N /N" ] [ 6 | 'koshu-source | "koshu-source /N [-name /N][-type /N]" ] [ 7 | 'koshu-version | "koshu-version /N" ] |}
@@ -252,7 +254,7 @@ TABLE : ROP
                        ---- ------------------------ ---------------------------------------------------------
                        1    'add                     "add /N E ..."
                        2    'dump-cox                "dump-cox E"
-                       3    'fill                    "fill /P E"
+                       3    'fill                    "fill /P ... -with E"
                        4    'range                   "range /N -from E -to E"
                        5    'range-day               "range-day /N -from /P to /P"
                        6    'range-hour              "range-hour /N -from /P to /P"
@@ -260,7 +262,7 @@ TABLE : ROP
                        8    'range-month             "range-month /N -from /P to /P"
                        9    'range-second            "range-second /N -from /P to /P"
                        10   'range-year              "range-year /N -from /P to /P"
-                       11   'replace                 "replace /P E"
+                       11   'replace                 "replace /P ... -by F"
                        12   'replace-all             "replace-all -from E -to E"
                        13   'split                   "split /N E ..."
                        14   'subst                   "subst /N E ..."
@@ -291,7 +293,9 @@ TABLE : ROP
                        1    'contents                "contents /N"
                        2    'dependent-rank          "dependent-rank /P /P -rank /N"
                        3    'dump-tree               "dump-tree X"
-                       4    'size                    "size /N"
+                       4    'eqlize                  'eqlize
+                       5    'size                    "size /N"
+                       6    'visit-distance          "visit-distance R -step /P ... -to /N -distance /N"
                        
   10   'lattice        /n   /name                    /usage
                        ---- ------------------------ ---------------------------------------------------------
