@@ -11,7 +11,7 @@
 ```
 ** -*- koshu -*-
 
-my-dee : const {| [] |}
+my-dee : const {= [] =}
 
 |== P : dee
 |== Q : my-dee

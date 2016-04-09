@@ -9,7 +9,7 @@
 ```
 ** -*- koshu -*-
 
-my-dum : const {| |}
+my-dum : const {= =}
 
 |== P : dum    | down /r
 |== Q : my-dum | down /r
@@ -27,11 +27,11 @@ Command `koshu dum-equiv-const.k` produces:
 **    <stdout>
 **
 
-|-- P  /r {| |}
+|-- P  /r {= =}
 
 *** 1 judge 
 
-|-- Q  /r {| |}
+|-- Q  /r {= =}
 
 *** 1 judge 
 
