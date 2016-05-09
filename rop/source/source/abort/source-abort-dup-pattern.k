@@ -3,4 +3,4 @@
 **  RELMAP OPERATOR : source
 **
 
-|== Q : source -pattern P P -term /x /y
+|== Q : source P P /x /y

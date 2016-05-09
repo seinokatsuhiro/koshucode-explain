@@ -15,22 +15,21 @@
 **  RELMAP OPERATOR : source
 **
 
-|== Q : source -pattern P P -term /x /y
+|== Q : source P P /x /y
 ```
 
 Command `koshu source-abort-dup-pattern.k` exits with 2 and produces:
 
 ```
 **
-**  ABORTED  Unexpected attribute
-**  -------- ----------------------------------------- ---------
-**  Detail   Require one word
-**  Source   6 24 source-abort-dup-pattern.k
-**           > P P -term /x /y                         .. attr
+**  ABORTED  Require term name
+**  -------- ------------------------------- ---------
+**  Source   6 17 source-abort-dup-pattern.k
+**           > P /x /y                       .. attr
 **           6 8 source-abort-dup-pattern.k
-**           > source -pattern P P -term /x /y         .. relmap
+**           > source P P /x /y              .. relmap
 **           6 0 source-abort-dup-pattern.k
-**           > |== Q : source -pattern P P -term /x /y .. assert
+**           > |== Q : source P P /x /y      .. assert
 **  Command  koshu
 **           source-abort-dup-pattern.k
 **
@@ -80,7 +79,7 @@ Command `koshu source-abort-nested-term.k` exits with 2 and produces:
 **  RELMAP OPERATOR : source
 **
 
-|== Q : source -pattern -term /x /y
+|== Q : source /x /y
 ```
 
 Command `koshu source-abort-no-pattern.k` exits with 2 and produces:
@@ -88,12 +87,14 @@ Command `koshu source-abort-no-pattern.k` exits with 2 and produces:
 ```
 **
 **  ABORTED  Unexpected attribute
-**  -------- ------------------------------------- ---------
+**  -------- ------------------------------ ---------
 **  Detail   Require one word
-**  Source   6 8 source-abort-no-pattern.k
-**           > source -pattern -term /x /y         .. relmap
+**  Source   6 15 source-abort-no-pattern.k
+**           > /x /y                        .. attr
+**           6 8 source-abort-no-pattern.k
+**           > source /x /y                 .. relmap
 **           6 0 source-abort-no-pattern.k
-**           > |== Q : source -pattern -term /x /y .. assert
+**           > |== Q : source /x /y         .. assert
 **  Command  koshu
 **           source-abort-no-pattern.k
 **
