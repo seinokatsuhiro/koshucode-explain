@@ -22,8 +22,9 @@ Command `koshu source-abort-dup-pattern.k` exits with 2 and produces:
 
 ```
 **
-**  ABORTED  Require term name
+**  ABORTED  Require flat name
 **  -------- ------------------------------- ---------
+**  Detail   P
 **  Source   6 17 source-abort-dup-pattern.k
 **           > P /x /y                       .. attr
 **           6 8 source-abort-dup-pattern.k
@@ -119,8 +120,9 @@ Command `koshu source-abort-non-name.k` exits with 2 and produces:
 
 ```
 **
-**  ABORTED  Require term name
+**  ABORTED  Require flat name
 **  -------- ---------------------------- ---------
+**  Detail   0
 **  Source   6 17 source-abort-non-name.k
 **           > /x 0 /y 1                  .. attr
 **           6 8 source-abort-non-name.k

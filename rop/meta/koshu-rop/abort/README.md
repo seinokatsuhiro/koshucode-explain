@@ -20,8 +20,9 @@ Command `koshu koshu-rop-abort-group.k` exits with 2 and produces:
 
 ```
 **
-**  ABORTED  Require term name
+**  ABORTED  Require flat name
 **  -------- ------------------------------------ ---------
+**  Detail   g
 **  Source   3 33 koshu-rop-abort-group.k
 **           > g                                  .. attr
 **           3 10 koshu-rop-abort-group.k
@@ -77,8 +78,9 @@ Command `koshu koshu-rop-abort-not-term.k` exits with 2 and produces:
 
 ```
 **
-**  ABORTED  Require term name
+**  ABORTED  Require flat name
 **  -------- ------------------------------- ---------
+**  Detail   name
 **  Source   3 20 koshu-rop-abort-not-term.k
 **           > name                          .. attr
 **           3 10 koshu-rop-abort-not-term.k
@@ -136,8 +138,9 @@ Command `koshu koshu-rop-abort-usage.k` exits with 2 and produces:
 
 ```
 **
-**  ABORTED  Require term name
+**  ABORTED  Require flat name
 **  -------- ------------------------------------ ---------
+**  Detail   u
 **  Source   3 33 koshu-rop-abort-usage.k
 **           > u                                  .. attr
 **           3 10 koshu-rop-abort-usage.k

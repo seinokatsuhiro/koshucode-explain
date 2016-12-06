@@ -27,12 +27,12 @@ Command `koshu rename-abort-conflict.k` exits with 2 and produces:
 **
 **  ABORTED  Duplicate term name
 **  -------- --------------------------- -------------
-**  Detail   Duplicated
+**  Detail   Duplicate
 **             /y
-**           Input relation
-**             rel /y any
-**                 /y any
-**                 /z any
+**           in the terms
+**             /y
+**             /y
+**             /z
 **  Source   7 8 rename-abort-conflict.k
 **           > rename /y /x              .. specialize
 **           6 0 rename-abort-conflict.k
@@ -65,12 +65,11 @@ Command `koshu rename-abort-duplicate.k` exits with 2 and produces:
 **
 **  ABORTED  Duplicate term name
 **  -------- ---------------------------- -------------
-**  Detail   Duplicated
+**  Detail   Duplicate
 **             /a
-**           Input relation
-**             rel /a any
-**                 /a any
-**                 /z any
+**           in the terms
+**             /a
+**             /a
 **  Source   7 8 rename-abort-duplicate.k
 **           > rename /a /x               .. specialize
 **           6 0 rename-abort-duplicate.k
@@ -102,11 +101,11 @@ Command `koshu rename-abort-fork.k` exits with 2 and produces:
 **
 **  ABORTED  Duplicate term name
 **  -------- ------------------------ -------------
-**  Detail   Duplicated
+**  Detail   Duplicate
 **             /x
-**           Input relation
-**             rel /x any
-**                 /y any
+**           in the terms
+**             /x
+**             /x
 **  Source   7 8 rename-abort-fork.k
 **           > rename /a /x /b /x     .. specialize
 **           6 0 rename-abort-fork.k
@@ -136,8 +135,9 @@ Command `koshu rename-abort-not-term.k` exits with 2 and produces:
 
 ```
 **
-**  ABORTED  Require term name
+**  ABORTED  Require flat name
 **  -------- ---------------------------- ---------
+**  Detail   x
 **  Source   7 15 rename-abort-not-term.k
 **           > /a x                       .. attr
 **           7 8 rename-abort-not-term.k
@@ -207,9 +207,9 @@ Command `koshu rename-abort-unknown.k` exits with 2 and produces:
 **  -------- -------------------------- -------------
 **  Detail   Unknown
 **             /z
-**           Input relation
-**             rel /x any
-**                 /y any
+**           in the terms
+**             /x
+**             /y
 **  Source   7 8 rename-abort-unknown.k
 **           > rename /c /z             .. specialize
 **           6 0 rename-abort-unknown.k

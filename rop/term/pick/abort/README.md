@@ -51,8 +51,9 @@ Command `koshu pick-abort-non-term.k` exits with 2 and produces:
 
 ```
 **
-**  ABORTED  Require term name
+**  ABORTED  Require flat name
 **  -------- -------------------------- ---------
+**  Detail   y
 **  Source   5 17 pick-abort-non-term.k
 **           > /x y                     .. attr
 **           5 12 pick-abort-non-term.k
@@ -86,10 +87,10 @@ Command `koshu pick-abort-unknown-term.k` exits with 2 and produces:
 **  -------- ------------------------------ -------------
 **  Detail   Unknown
 **             /v
-**           Input relation
-**             rel /x any
-**                 /y any
-**                 /z any
+**           in the terms
+**             /x
+**             /y
+**             /z
 **  Source   5 12 pick-abort-unknown-term.k
 **           > pick /v /x                   .. specialize
 **           5 0 pick-abort-unknown-term.k
