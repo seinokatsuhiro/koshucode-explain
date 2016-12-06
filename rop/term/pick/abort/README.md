@@ -22,12 +22,17 @@ Command `koshu pick-abort-nested-term.k` exits with 2 and produces:
 **
 **  ABORTED  Require term name
 **  -------- ----------------------------- ---------
-**  Source   5 17 pick-abort-nested-term.k
-**           > /x/y                        .. attr
-**           5 12 pick-abort-nested-term.k
-**           > pick /x/y                   .. relmap
-**           5 0 pick-abort-nested-term.k
-**           > |== Q : p | pick /x/y       .. assert
+**  Source   5.17 pick-abort-nested-term.k
+**             |== Q : p | pick
+**                 /x/y                    .. attr
+**
+**           5.12 pick-abort-nested-term.k
+**             |== Q : p |
+**                 pick /x/y               .. relmap
+**
+**           5.0 pick-abort-nested-term.k
+**             |== Q : p | pick /x/y       .. assert
+**
 **  Command  koshu
 **           pick-abort-nested-term.k
 **
@@ -54,12 +59,18 @@ Command `koshu pick-abort-non-term.k` exits with 2 and produces:
 **  ABORTED  Require flat name
 **  -------- -------------------------- ---------
 **  Detail   y
-**  Source   5 17 pick-abort-non-term.k
-**           > /x y                     .. attr
-**           5 12 pick-abort-non-term.k
-**           > pick /x y                .. relmap
-**           5 0 pick-abort-non-term.k
-**           > |== Q : p | pick /x y    .. assert
+**
+**  Source   5.17 pick-abort-non-term.k
+**             |== Q : p | pick
+**                 /x y                 .. attr
+**
+**           5.12 pick-abort-non-term.k
+**             |== Q : p |
+**                 pick /x y            .. relmap
+**
+**           5.0 pick-abort-non-term.k
+**             |== Q : p | pick /x y    .. assert
+**
 **  Command  koshu
 **           pick-abort-non-term.k
 **
@@ -91,10 +102,14 @@ Command `koshu pick-abort-unknown-term.k` exits with 2 and produces:
 **             /x
 **             /y
 **             /z
-**  Source   5 12 pick-abort-unknown-term.k
-**           > pick /v /x                   .. specialize
-**           5 0 pick-abort-unknown-term.k
-**           > |== Q : p | pick /v /x       .. assert
+**
+**  Source   5.12 pick-abort-unknown-term.k
+**             |== Q : p |
+**                 pick /v /x               .. specialize
+**
+**           5.0 pick-abort-unknown-term.k
+**             |== Q : p | pick /v /x       .. assert
+**
 **  Command  koshu
 **           pick-abort-unknown-term.k
 **

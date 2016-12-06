@@ -20,10 +20,14 @@ Command `koshu dum-abort-named-attr.k` exits with 2 and produces:
 **  ABORTED  Unexpected attribute
 **  -------- -------------------------- ---------
 **  Detail   Unknown -x
-**  Source   3 8 dum-abort-named-attr.k
-**           > dum -x                   .. lexmap
-**           3 0 dum-abort-named-attr.k
-**           > |== P : dum -x           .. assert
+**
+**  Source   3.8 dum-abort-named-attr.k
+**             |== P :
+**                 dum -x               .. lexmap
+**
+**           3.0 dum-abort-named-attr.k
+**             |== P : dum -x           .. assert
+**
 **  Command  koshu
 **           dum-abort-named-attr.k
 **
@@ -48,10 +52,14 @@ Command `koshu dum-abort-pos-attr.k` exits with 2 and produces:
 **  ABORTED  Unexpected attribute
 **  -------- ------------------------ ---------
 **  Detail   Attributes not required
-**  Source   3 8 dum-abort-pos-attr.k
-**           > dum /x                 .. lexmap
-**           3 0 dum-abort-pos-attr.k
-**           > |== P : dum /x         .. assert
+**
+**  Source   3.8 dum-abort-pos-attr.k
+**             |== P :
+**                 dum /x             .. lexmap
+**
+**           3.0 dum-abort-pos-attr.k
+**             |== P : dum /x         .. assert
+**
 **  Command  koshu
 **           dum-abort-pos-attr.k
 **

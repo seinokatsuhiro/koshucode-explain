@@ -20,10 +20,14 @@ Command `koshu dee-abort-named-attr.k` exits with 2 and produces:
 **  ABORTED  Unexpected attribute
 **  -------- -------------------------- ---------
 **  Detail   Unknown -x
-**  Source   3 8 dee-abort-named-attr.k
-**           > dee -x                   .. lexmap
-**           3 0 dee-abort-named-attr.k
-**           > |== P : dee -x           .. assert
+**
+**  Source   3.8 dee-abort-named-attr.k
+**             |== P :
+**                 dee -x               .. lexmap
+**
+**           3.0 dee-abort-named-attr.k
+**             |== P : dee -x           .. assert
+**
 **  Command  koshu
 **           dee-abort-named-attr.k
 **
@@ -48,10 +52,14 @@ Command `koshu dee-abort-pos-attr.k` exits with 2 and produces:
 **  ABORTED  Unexpected attribute
 **  -------- ------------------------ ---------
 **  Detail   Attributes not required
-**  Source   3 8 dee-abort-pos-attr.k
-**           > dee /x                 .. lexmap
-**           3 0 dee-abort-pos-attr.k
-**           > |== P : dee /x         .. assert
+**
+**  Source   3.8 dee-abort-pos-attr.k
+**             |== P :
+**                 dee /x             .. lexmap
+**
+**           3.0 dee-abort-pos-attr.k
+**             |== P : dee /x         .. assert
+**
 **  Command  koshu
 **           dee-abort-pos-attr.k
 **

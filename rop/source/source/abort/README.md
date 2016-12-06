@@ -25,12 +25,18 @@ Command `koshu source-abort-dup-pattern.k` exits with 2 and produces:
 **  ABORTED  Require flat name
 **  -------- ------------------------------- ---------
 **  Detail   P
-**  Source   6 17 source-abort-dup-pattern.k
-**           > P /x /y                       .. attr
-**           6 8 source-abort-dup-pattern.k
-**           > source P P /x /y              .. relmap
-**           6 0 source-abort-dup-pattern.k
-**           > |== Q : source P P /x /y      .. assert
+**
+**  Source   6.17 source-abort-dup-pattern.k
+**             |== Q : source P
+**                 P /x /y                   .. attr
+**
+**           6.8 source-abort-dup-pattern.k
+**             |== Q :
+**                 source P P /x /y          .. relmap
+**
+**           6.0 source-abort-dup-pattern.k
+**             |== Q : source P P /x /y      .. assert
+**
 **  Command  koshu
 **           source-abort-dup-pattern.k
 **
@@ -57,12 +63,17 @@ Command `koshu source-abort-nested-term.k` exits with 2 and produces:
 **
 **  ABORTED  Require term name
 **  -------- ------------------------------- ---------
-**  Source   6 17 source-abort-nested-term.k
-**           > /x /y/z                       .. attr
-**           6 8 source-abort-nested-term.k
-**           > source P /x /y/z              .. relmap
-**           6 0 source-abort-nested-term.k
-**           > |== Q : source P /x /y/z      .. assert
+**  Source   6.17 source-abort-nested-term.k
+**             |== Q : source P
+**                 /x /y/z                   .. attr
+**
+**           6.8 source-abort-nested-term.k
+**             |== Q :
+**                 source P /x /y/z          .. relmap
+**
+**           6.0 source-abort-nested-term.k
+**             |== Q : source P /x /y/z      .. assert
+**
 **  Command  koshu
 **           source-abort-nested-term.k
 **
@@ -90,12 +101,18 @@ Command `koshu source-abort-no-pattern.k` exits with 2 and produces:
 **  ABORTED  Unexpected attribute
 **  -------- ------------------------------ ---------
 **  Detail   Require one word
-**  Source   6 15 source-abort-no-pattern.k
-**           > /x /y                        .. attr
-**           6 8 source-abort-no-pattern.k
-**           > source /x /y                 .. relmap
-**           6 0 source-abort-no-pattern.k
-**           > |== Q : source /x /y         .. assert
+**
+**  Source   6.15 source-abort-no-pattern.k
+**             |== Q : source
+**                 /x /y                    .. attr
+**
+**           6.8 source-abort-no-pattern.k
+**             |== Q :
+**                 source /x /y             .. relmap
+**
+**           6.0 source-abort-no-pattern.k
+**             |== Q : source /x /y         .. assert
+**
 **  Command  koshu
 **           source-abort-no-pattern.k
 **
@@ -123,12 +140,18 @@ Command `koshu source-abort-non-name.k` exits with 2 and produces:
 **  ABORTED  Require flat name
 **  -------- ---------------------------- ---------
 **  Detail   0
-**  Source   6 17 source-abort-non-name.k
-**           > /x 0 /y 1                  .. attr
-**           6 8 source-abort-non-name.k
-**           > source P /x 0 /y 1         .. relmap
-**           6 0 source-abort-non-name.k
-**           > |== Q : source P /x 0 /y 1 .. assert
+**
+**  Source   6.17 source-abort-non-name.k
+**             |== Q : source P
+**                 /x 0 /y 1              .. attr
+**
+**           6.8 source-abort-non-name.k
+**             |== Q :
+**                 source P /x 0 /y 1     .. relmap
+**
+**           6.0 source-abort-non-name.k
+**             |== Q : source P /x 0 /y 1 .. assert
+**
 **  Command  koshu
 **           source-abort-non-name.k
 **

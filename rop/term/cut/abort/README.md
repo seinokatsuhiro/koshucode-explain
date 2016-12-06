@@ -29,12 +29,17 @@ Command `koshu cut-abort-nested-term.k` exits with 2 and produces:
 **
 **  ABORTED  Require term name
 **  -------- ------------------------------------------------ ---------
-**  Source   12 42 cut-abort-nested-term.k
-**           > /g/x                                           .. attr
-**           12 38 cut-abort-nested-term.k
-**           > cut /g/x                                       .. relmap
-**           12 0 cut-abort-nested-term.k
-**           > |== Q : p | cut /x | group p -to /g | cut /g/x .. assert
+**  Source   12.42 cut-abort-nested-term.k
+**             |== Q : p | cut /x | group p -to /g | cut
+**                 /g/x                                       .. attr
+**
+**           12.38 cut-abort-nested-term.k
+**             |== Q : p | cut /x | group p -to /g |
+**                 cut /g/x                                   .. relmap
+**
+**           12.0 cut-abort-nested-term.k
+**             |== Q : p | cut /x | group p -to /g | cut /g/x .. assert
+**
 **  Command  koshu
 **           cut-abort-nested-term.k
 **
@@ -68,12 +73,18 @@ Command `koshu cut-abort-non-term.k` exits with 2 and produces:
 **  ABORTED  Require flat name
 **  -------- -------------------------- ---------
 **  Detail   y
-**  Source   12 16 cut-abort-non-term.k
-**           > /x y                     .. attr
-**           12 12 cut-abort-non-term.k
-**           > cut /x y                 .. relmap
-**           12 0 cut-abort-non-term.k
-**           > |== Q : p | cut /x y     .. assert
+**
+**  Source   12.16 cut-abort-non-term.k
+**             |== Q : p | cut
+**                 /x y                 .. attr
+**
+**           12.12 cut-abort-non-term.k
+**             |== Q : p |
+**                 cut /x y             .. relmap
+**
+**           12.0 cut-abort-non-term.k
+**             |== Q : p | cut /x y     .. assert
+**
 **  Command  koshu
 **           cut-abort-non-term.k
 **
@@ -111,10 +122,14 @@ Command `koshu cut-abort-unknown-term.k` exits with 2 and produces:
 **           in the terms
 **             /x
 **             /y
-**  Source   12 12 cut-abort-unknown-term.k
-**           > cut /x /z                    .. specialize
-**           12 0 cut-abort-unknown-term.k
-**           > |== Q : p | cut /x /z        .. assert
+**
+**  Source   12.12 cut-abort-unknown-term.k
+**             |== Q : p |
+**                 cut /x /z                .. specialize
+**
+**           12.0 cut-abort-unknown-term.k
+**             |== Q : p | cut /x /z        .. assert
+**
 **  Command  koshu
 **           cut-abort-unknown-term.k
 **
